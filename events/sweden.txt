@@ -4,8 +4,8 @@ add_namespace = sweden
 # Hans Arashi stirbt
 country_event = {
     id = sweden.1
-    #title = italy.18.t
-    #desc = italy.18.d^
+    title = sweden.1.t
+    desc = sweden.1.d^
     is_triggered_only = yes
     option = {
         name = sweden.1.a
@@ -25,11 +25,11 @@ country_event = {
     }
 }
 
-# Wer wird der neue Führer?
+# Faschismus
 country_event = {
     id = sweden.2
-    #title = italy.18.t
-    #desc = italy.18.d
+    title = sweden.2.t
+    desc = sweden.2.d
     is_triggered_only = yes
     option = {
         name = sweden.2.a
@@ -54,3 +54,22 @@ country_event = {
 			}
     }
 }
+#Sozialismus
+country_event = {
+    id = sweden.3
+    title = sweden3.t
+    desc = sweden3.d
+    is_triggered_only = yes
+	option = {
+        name = sweden.2.b
+        set_politics = {
+		ruling_party = communism
+		elections_allowed = no
+		}
+		start_civil_war = {
+			ideology = fascism
+			size = 0.4
+			}
+    }
+}
+
