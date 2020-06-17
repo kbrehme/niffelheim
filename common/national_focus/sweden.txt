@@ -1666,6 +1666,7 @@ focus_tree = {
 		y = 0
 		completion_reward{
 			add_political_power=150
+			add_stability = -0.5
 		}
 
 	}
@@ -1683,10 +1684,8 @@ focus_tree = {
 		x = 23
 		y = 1
 		completion_reward{
-			set_political_party={ ideology = socialism popularity = 0.1 }
-			set_political_party={ ideology = nazism popularity = 0.3 }
-			set_political_party={ ideology = marxism popularity = 0.3 }
-			set_political_party={ ideology = centrism popularity = 0.1 }
+			country_event = { id = sweden.1 }
+			add_stability = -0.2
 		}
 
 	}
@@ -1703,6 +1702,9 @@ focus_tree = {
 		}
 		x = 21
 		y = 2
+		completion_reward{
+			country_event = { id = sweden.2 }
+		}
 
 	}
 	focus = {
