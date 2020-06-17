@@ -1,17 +1,11 @@
-name: "Upload to Workshop"
-
-on:
-  - push
-
-jobs:
-  upload:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: AnarkisGaming/workshop@v1
-        with:
-          appID: 394360
-          publishedFileID: 2131514242
-        env:
-          STEAM_ACCOUNT_NAME: ${{ secrets.accountname }}
-          STEAM_PASSWORD: ${{ secrets.password }}
+- name: upload-workshop-item
+  uses: AnarkisGaming/workshop@v1
+  with:
+    # The App ID of the game/app to upload to (https://steamcommunity.com/app/[APPID]/workshop)
+    appID: 394360
+    # The Workshop ID of your item (https://steamcommunity.com/sharedfiles/filedetails/?id=[WORKSHOPID])
+    publishedFileID: 2131514242
+    # The path to the content to upload, relative to your repository's root. Omit to use your repository's root
+    path: # optional, default is 
+    # An optional note to accompany your update
+    changelog: # optional, default is 
