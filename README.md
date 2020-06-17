@@ -23,6 +23,7 @@
     - added "Kaisolini" as leader for ITA
     - added "Frank aus MGD" as leader for GB
     - added "Gottmarck" as leader for GER-Kaiserreich
+    - added "Arashi" as leader for SWE
 
 
 - **v-1.0**
