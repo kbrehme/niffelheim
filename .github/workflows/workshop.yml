@@ -13,5 +13,5 @@ jobs:
           appID: 394360
           publishedFileID: 2131514242
         env:
-          STEAM_ACCOUNT_NAME: Kbrehme06
-          STEAM_PASSWORD: TJK1990_1994
+          STEAM_ACCOUNT_NAME: ${{ secrets.accountname }}
+          STEAM_PASSWORD: ${{ secrets.password }}
