@@ -1,0 +1,802 @@
+focus_tree = {
+	id = sweden
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SWE
+		}
+	}
+	default = no
+	focus = {
+		id = SWE_Ein_neuer_Weg
+		text = SWE_Ein_neuer_Weg
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10,00
+		x = 18
+		y = 0
+
+	}
+	focus = {
+		id = SWE_links_oder_rechts
+		text = SWE_links_oder_rechts
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_Ein_neuer_Weg
+		}
+		mutually_exclusive = {
+			focus = SWE_demokrati
+		}
+		x = 10
+		y = 1
+
+	}
+	focus = {
+		id = SWE_fascista
+		text = SWE_fascista
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 20,00
+		prerequisite = {
+			focus = SWE_links_oder_rechts
+		}
+		mutually_exclusive = {
+			focus = SWE_marxism
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = SWE_guten_tag_führer
+		text = SWE_guten_tag_führer
+		icon = GFX_goal_tripartite_pact
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_fascista
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = SWE_nur_auf_ketten_nach_paris
+		text = SWE_nur_auf_ketten_nach_paris
+		icon = GFX_focus_cze_military_research_institute
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_guten_tag_führer
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = SWE_ein_stück_von_leningrad
+		text = SWE_ein_stück_von_leningrad
+		icon = GFX_focus_attack_soviet
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_nur_auf_ketten_nach_paris
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = SWE_plaste_und_elaste
+		text = SWE_plaste_und_elaste
+		icon = GFX_focus_generic_industry_2
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_ein_stück_von_leningrad
+		}
+		x = 8
+		y = 6
+
+	}
+	focus = {
+		id = SWE_die_benelux_länder
+		text = SWE_die_benelux_länder
+		icon = GFX_focus_hol_oranje_boven
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_plaste_und_elaste
+		}
+		x = 8
+		y = 7
+
+	}
+	focus = {
+		id = SWE_britische_inseln
+		text = SWE_britische_inseln
+		icon = GFX_focus_attack_britain
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_die_benelux_länder
+		}
+		x = 8
+		y = 8
+
+	}
+	focus = {
+		id = SWE_das_wolfrudel_erweitern
+		text = SWE_das_wolfrudel_erweitern
+		icon = GFX_goal_generic_wolf_pack
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_britische_inseln
+		}
+		x = 8
+		y = 9
+
+	}
+	focus = {
+		id = SWE_marxism
+		text = SWE_marxism
+		icon = GFX_focus_generic_join_comintern
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_links_oder_rechts
+		}
+		mutually_exclusive = {
+			focus = SWE_fascista
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = SWE_das_rote_finnland
+		text = SWE_das_rote_finnland
+		icon = GFX_focus_invite_finland
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_marxism
+			focus = SWE_fascista
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = SWE_zwei_noch
+		text = SWE_zwei_noch
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_das_rote_finnland
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = SWE_die_baltischen_staaten
+		text = SWE_die_baltischen_staaten
+		icon = GFX_focus_spr_crush_the_revolution
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_zwei_noch
+		}
+		x = 10
+		y = 5
+
+	}
+	focus = {
+		id = SWE_papa_stalin
+		text = SWE_papa_stalin
+		icon = GFX_focus_fra_loyalty_stalin
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_marxism
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = SWE_arbeiter_fließen
+		text = SWE_arbeiter_fließen
+		icon = GFX_focus_RAJ_seek_help_from_soviet
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_papa_stalin
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = SWE_ein_stück_von_polen
+		text = SWE_ein_stück_von_polen
+		icon = GFX_focus_generic_polish_deal
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_arbeiter_fließen
+		}
+		x = 12
+		y = 5
+
+	}
+	focus = {
+		id = SWE_der_fokus_auf_hitler
+		text = SWE_der_fokus_auf_hitler
+		icon = GFX_focus_attack_germany
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_ein_stück_von_polen
+		}
+		x = 12
+		y = 6
+
+	}
+	focus = {
+		id = SWE_mehr_panzer_als_männer
+		text = SWE_mehr_panzer_als_männer
+		icon = GFX_goal_generic_army_tanks
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_der_fokus_auf_hitler
+		}
+		x = 12
+		y = 7
+
+	}
+	focus = {
+		id = SWE_asiatisch_rot
+		text = SWE_asiatisch_rot
+		icon = GFX_focus_chi_one_china_policy
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_mehr_panzer_als_männer
+		}
+		x = 12
+		y = 8
+
+	}
+	focus = {
+		id = SWE_onser_gegner_in_übersee
+		text = SWE_onser_gegner_in_übersee
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_britische_inseln
+			focus = SWE_asiatisch_rot
+		}
+		x = 10
+		y = 9
+
+	}
+	focus = {
+		id = SWE_demokrati
+		text = SWE_demokrati
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_Ein_neuer_Weg
+		}
+		mutually_exclusive = {
+			focus = SWE_links_oder_rechts
+			focus = SWE_rückkehr_des_jarls
+		}
+		x = 18
+		y = 1
+
+	}
+	focus = {
+		id = SWE_ein_alter_Bund
+		text = SWE_ein_alter_Bund
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_demokrati
+		}
+		mutually_exclusive = {
+			focus = SWE_britannia_und_wikinger
+		}
+		x = 16
+		y = 2
+
+	}
+	focus = {
+		id = SWE_dänemark
+		text = SWE_dänemark
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_ein_alter_Bund
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = SWE_estland_und_freunde
+		text = SWE_estland_und_freunde
+		icon = GFX_goal_support_democracy
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_dänemark
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = SWE_benelux_länder
+		text = SWE_benelux_länder
+		icon = GFX_focus_hol_oranje_boven
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_estland_und_freunde
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = SWE_holländische Kolonien
+		text = SWE_holländische Kolonien
+		icon = GFX_focus_por_luso_tropicalism
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_benelux_länder
+		}
+		x = 16
+		y = 6
+
+	}
+	focus = {
+		id = SWE_britannia_und_wikinger
+		text = SWE_britannia_und_wikinger
+		icon = GFX_focus_eng_the_sun_never_sets
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_demokrati
+		}
+		mutually_exclusive = {
+			focus = SWE_ein_alter_Bund
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = SWE_ein_deal
+		text = SWE_ein_deal
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_britannia_und_wikinger
+		}
+		mutually_exclusive = {
+			focus = SWE_die_allierten
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = SWE_neutral_pakt
+		text = SWE_neutral_pakt
+		icon = GFX_goal_anschluss
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_ein_deal
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = SWE_köftespieß
+		text = SWE_köftespieß
+		icon = GFX_goal_generic_trade
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_neutral_pakt
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = SWE_ölvorkommen_naher_osten
+		text = SWE_ölvorkommen_naher_osten
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_köftespieß
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = SWE_schweizer_forscher
+		text = SWE_schweizer_forscher
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_ölvorkommen_naher_osten
+		}
+		x = 19
+		y = 7
+
+	}
+	focus = {
+		id = SWE_die_allierten
+		text = SWE_die_allierten
+		icon = GFX_focus_hol_the_fourth_ally
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_britannia_und_wikinger
+		}
+		mutually_exclusive = {
+			focus = SWE_ein_deal
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = SWE_skandinaviens_new_deal
+		text = SWE_skandinaviens_new_deal
+		icon = GFX_focus_chi_mission_to_the_us
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_die_allierten
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = SWE_amerikanische_touristen
+		text = SWE_amerikanische_touristen
+		icon = GFX_focus_generic_military_academy
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_skandinaviens_new_deal
+		}
+		x = 22
+		y = 5
+
+	}
+	focus = {
+		id = SWE_amerikanische_forscher
+		text = SWE_amerikanische_forscher
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_amerikanische_touristen
+		}
+		x = 22
+		y = 6
+
+	}
+	focus = {
+		id = SWE_rückkehr_des_jarls
+		text = SWE_rückkehr_des_jarls
+		icon = GFX_focus_AST_squander_bug
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_Ein_neuer_Weg
+		}
+		mutually_exclusive = {
+			focus = SWE_demokrati
+		}
+		x = 30
+		y = 1
+
+	}
+	focus = {
+		id = SWE_die_länder-des_jarls
+		text = SWE_die_länder-des_jarls
+		icon = GFX_goal_generic_national_unity
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_rückkehr_des_jarls
+		}
+		x = 30
+		y = 2
+
+	}
+	focus = {
+		id = SWE_neue_wege_für_die_feste
+		text = SWE_neue_wege_für_die_feste
+		icon = GFX_focus_generic_africa_infrastructure
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_die_länder-des_jarls
+		}
+		x = 27
+		y = 3
+
+	}
+	focus = {
+		id = SWE_blutfeden_des_jarls
+		text = SWE_blutfeden_des_jarls
+		icon = GFX_focus_eng_the_kings_party
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_die_länder-des_jarls
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = SWE_dänewer
+		text = SWE_dänewer
+		icon = GFX_focus_hol_gateway_to_europe
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_blutfeden_des_jarls
+		}
+		x = 30
+		y = 5
+
+	}
+	focus = {
+		id = SWE_forscher_vereinigt_euch
+		text = SWE_forscher_vereinigt_euch
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_das_wolfrudel_erweitern
+			focus = SWE_asiatisch_rot
+		}
+		x = 10
+		y = 10
+
+	}
+	focus = {
+		id = SWE_wikingerschiffe
+		text = SWE_wikingerschiffe
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_die_länder-des_jarls
+		}
+		x = 33
+		y = 3
+
+	}
+	focus = {
+		id = SWE_die_neuen_handelswege
+		text = SWE_die_neuen_handelswege
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_neue_wege_für_die_feste
+		}
+		x = 27
+		y = 4
+
+	}
+	focus = {
+		id = SWE_die_fliegenden_drachen
+		text = SWE_die_fliegenden_drachen
+		icon = GFX_goal_generic_build_airforce
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_wikingerschiffe
+		}
+		x = 33
+		y = 4
+
+	}
+	focus = {
+		id = SWE_brauchen_mehr_schmieden
+		text = SWE_brauchen_mehr_schmieden
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_die_neuen_handelswege
+		}
+		x = 27
+		y = 5
+
+	}
+	focus = {
+		id = SWE_brutale_berserker
+		text = SWE_brutale_berserker
+		icon = GFX_goal_generic_CAS
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_die_fliegenden_drachen
+		}
+		x = 33
+		y = 5
+
+	}
+	focus = {
+		id = SWE_der_weg_mit_gottmarck
+		text = SWE_der_weg_mit_gottmarck
+		icon = GFX_focus_ger_return_of_the_kaiser
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_moskau_kennt_keine_grenze
+		}
+		x = 27
+		y = 8
+
+	}
+	focus = {
+		id = SWE_es_gibt_nur_einen_gott
+		text = SWE_es_gibt_nur_einen_gott
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_danzig_für_uns
+		}
+		x = 33
+		y = 8
+
+	}
+	focus = {
+		id = SWE_britannia_für_uns
+		text = SWE_britannia_für_uns
+		icon = GFX_focus_attack_britain
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_befreiung_kolonie_britannia
+		}
+		x = 30
+		y = 10
+
+	}
+	focus = {
+		id = SWE_befreiung_kolonie_britannia
+		text = SWE_befreiung_kolonie_britannia
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_der_weg_mit_gottmarck
+			focus = SWE_es_gibt_nur_einen_gott
+		}
+		x = 30
+		y = 9
+
+	}
+	focus = {
+		id = SWE_danzig_für_uns
+		text = SWE_danzig_für_uns
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_dänewer
+		}
+		mutually_exclusive = {
+			focus = SWE_moskau_kennt_keine_grenze
+		}
+		x = 33
+		y = 7
+
+	}
+	focus = {
+		id = SWE_moskau_kennt_keine_grenze
+		text = SWE_moskau_kennt_keine_grenze
+		icon = GFX_focus_attack_soviet
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_dänewer
+		}
+		mutually_exclusive = {
+			focus = SWE_danzig_für_uns
+		}
+		x = 27
+		y = 7
+
+	}
+	focus = {
+		id = SWE_traditionelle_königshäuser
+		text = SWE_traditionelle_königshäuser
+		icon = GFX_focus_generic_monarchy_1
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_es_gibt_nur_einen_gott
+		}
+		x = 33
+		y = 9
+
+	}
+	focus = {
+		id = SWE_die_13_kolonien
+		text = SWE_die_13_kolonien
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_britannia_für_uns
+		}
+		x = 30
+		y = 11
+
+	}
+	focus = {
+		id = SWE_eine_fehde_mit_den_marck
+		text = SWE_eine_fehde_mit_den_marck
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_der_weg_mit_gottmarck
+		}
+		x = 27
+		y = 9
+
+	}
+	focus = {
+		id = SWE_australiens_valhalla
+		text = SWE_australiens_valhalla
+		icon = GFX_focus_attack_australia
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_die_13_kolonien
+		}
+		x = 30
+		y = 12
+
+	}
+	focus = {
+		id = SWE_gewürzhandel_kontrolle
+		text = SWE_gewürzhandel_kontrolle
+		icon = GFX_focus_attack_india
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_australiens_valhalla
+		}
+		x = 30
+		y = 13
+
+	}
+	focus = {
+		id = SWE_bombastische_freundschaft
+		text = SWE_bombastische_freundschaft
+		icon = GFX_focus_befriend_italy
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_traditionelle_königshäuser
+		}
+		x = 33
+		y = 10
+
+	}
+	focus = {
+		id = SWE_viva_la_jarl
+		text = SWE_viva_la_jarl
+		icon = GFX_focus_attack_france
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_bombastische_freundschaft
+		}
+		x = 33
+		y = 11
+
+	}
+	focus = {
+		id = SWE_dday_round_2
+		text = SWE_dday_round_2
+		icon = GFX_focus_attack_france
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_eine_fehde_mit_den_marck
+		}
+		x = 27
+		y = 10
+
+	}
+	focus = {
+		id = SWE_sichern_des_westsektors
+		text = SWE_sichern_des_westsektors
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10,00
+		prerequisite = {
+			focus = SWE_dday_round_2
+		}
+		x = 27
+		y = 11
+
+	}
+}
