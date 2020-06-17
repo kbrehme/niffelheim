@@ -1,0 +1,17 @@
+name: "Upload to Workshop"
+
+on:
+  - push
+
+jobs:
+  upload:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: AnarkisGaming/workshop@v1
+        with:
+          appID: 394360
+          publishedFileID: 2131514242
+        env:
+          STEAM_ACCOUNT_NAME: Kbrehme06
+          STEAM_PASSWORD: TJK1990_1994
