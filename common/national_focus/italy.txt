@@ -1503,7 +1503,7 @@ focus_tree = {
   focus = {
     id = ITA_victoryinETH
     icon = GFX_goal_generic_propaganda
-    mutually_exclusiv = { focus = ITA_kaisolini }
+    mutually_exclusive = { focus = ITA_kaisolini }
     available = {
       OR = {
         owns_state = 271
@@ -1532,27 +1532,7 @@ focus_tree = {
     }
   }
   
-  focus = {
-    id = ITA_kaisolini
-    icon = GFX_goal_generic_demand_territory
-    mutally_exclusiv = { focus = ITA_victoryinETH }
-    available = {
-      OR = {
-        owns_state = 271
-        ETH = { is_puppet_of = ITA }
-      }
-    }
-    x = 18
-    y = 0
-	cost = 10
-	
-	completion_reward = {
-      
-    }
-  }
-	
-	
-  
+
   focus = {
     id = ITA_slovenia_dalmatia_claims
     icon = GFX_goal_generic_demand_territory
@@ -1670,7 +1650,7 @@ focus_tree = {
   focus = {
     id = ITA_support_nationalist_spain
     icon = GFX_goal_generic_military_deal
-    prerequisite = { focus = ITA_victoryinETH }
+    prerequisite = { focus = ITA_victoryinETH focus = ITA_kaisolini }
     available = {
       if = {
         limit = {
@@ -2641,5 +2621,303 @@ focus_tree = {
       JAP = { add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus } }
     }
   }
+  
+  
+  
+    focus = {
+		id = ITA_kaisolini
+		icon = GFX_goal_generic_demand_territory
+		mutually_exclusive = { focus = ITA_victoryinETH }
+		available = {
+			OR = {
+				owns_state = 271
+				ETH = { is_puppet_of = ITA }
+			}
+		}
+		x = 26
+		y = 0
+		cost = 10     
+		completion_reward = {
+			add_stability = 0.15
+			add_war_support = 0.05       
+			country_event = { id = italy.17 }
+		}
+    }
 
+	focus = {
+		id = ITA_industrialist
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = ITA_kaisolini }
+		mutually_exclusive = { focus = ITA_militarist }
+		relative_position_id = ITA_kaisolini
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_country_leader_trait = economic_reformer
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = ITA_militarist
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = ITA_kaisolini }
+		mutually_exclusive = { focus = ITA_industrialist }
+		relative_position_id = ITA_kaisolini
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			country_event = { id = italy.18 }
+			add_war_support = 0.05
+		}
+	}
+	
+	focus = {
+		id = ITA_newEconomy
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = ITA_kaisolini }
+		relative_position_id = ITA_kaisolini
+		x = -3
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_ideas = ITA_new_economic_boost 
+		}
+	}
+	
+	focus = {
+		id = ITA_friend_jugos
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = ITA_militarist focus = ITA_industrialist }
+		x = 26
+		y = 2
+		cost = 10
+		completion_reward = {
+			YUG = {
+				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
+				add_timed_idea = { idea = fascist_influence days = 1095 }
+			}
+			#hidden_effect = { news_event = { id = news.xxx } }
+		}
+	}
+	
+	focus = {
+		id = ITA_madagaskar
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = ITA_militarist focus = ITA_industrialist }
+		x = 24
+		y = 2
+		cost = 10
+		completion_reward = {
+			country_event = { id = italy.19 }
+		}
+	}
+	
+	focus = {
+		id = ITA_anschluss_albanien
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = ITA_militarist focus = ITA_industrialist }
+		x = 28
+		y = 2
+		cost = 10
+		completion_reward = {
+			country_event = { id = italy.20 }
+		}
+	}
+	
+	focus = {
+		id = ITA_new_ideas
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = ITA_friend_jugos }
+		x = 25
+		y = 3
+		cost = 10
+		completion_reward = {
+			add_ideas = ITA_new_weaponary
+		}
+	}
+	
+	focus = {
+		id = ITA_griechisch_ult
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = ITA_anschluss_albanien }
+		prerequisite = { focus = ITA_friend_jugos }
+		x = 27
+		y = 3
+		cost = 10
+		completion_reward = {
+			country_event = { id = italy.21 }
+		}
+	}
+	
+	focus = {
+		id = ITA_jugos_kompro
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = ITA_griechisch_ult }
+		mutually_exclusive = { focus = ITA_jugos_anex }
+		relative_position_id = ITA_griechisch_ult
+		x = -2
+		y = 1
+		cost = 10
+		completion_reward = {
+			country_event = { id = italy.22 }
+		}
+	}
+	
+	focus = {
+		id = ITA_bulgaria_mario
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = ITA_griechisch_ult }
+		relative_position_id = ITA_griechisch_ult
+		x = -4
+		y = 1
+		cost = 10
+		completion_reward = {
+			set_autonomy = { target = BUL autonomy_state = autonomy_satellite }
+		}
+	}
+	
+	focus = {
+		id = ITA_jugos_anex
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = ITA_griechisch_ult }
+		mutually_exclusive = { focus = ITA_jugos_kompro }
+		relative_position_id = ITA_griechisch_ult
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			country_event = { id = italy.24 }
+			add_ideas = ITA_friendship_traitor
+		}
+	}
+	
+	focus = {
+		id = ITA_war_gre
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = ITA_jugos_anex }
+		relative_position_id = ITA_jugos_anex
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = GRE
+				expire = 0
+				generator = { 184 }
+			}
+			add_named_threat = { threat = 2.5 name = "Italien verlangt Griechenland" }
+		}
+	}
+	
+	focus = {
+		id = ITA_gre_kompro
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = ITA_bulgaria_mario }
+		prerequisite = { focus = ITA_jugos_kompro }
+		x = 24
+		y = 5
+		cost = 10
+		completion_reward = {
+			country_event = { id = italy.23 }
+		}
+	}
+	
+	focus = {
+		id = ITA_claims_france
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = ITA_war_gre focus = ITA_gre_kompro }
+		x = 26
+		y = 6
+		cost = 5
+		completion_reward = {
+			add_state_claim = 268
+			add_state_claim = 553
+			add_state_claim = 554
+			add_state_claim = 677
+			add_state_claim = 680
+			add_state_claim = 1
+			add_state_claim = 514
+			add_state_claim = 665
+			add_state_claim = 458
+			add_state_claim = 513
+			add_state_claim = 460
+			add_state_claim = 461
+			add_state_claim = 462
+			add_state_claim = 32
+			add_state_claim = 735
+			add_state_claim = 21
+			add_named_threat = { threat = 7.5 name = "Italien verlangt französische Gebiete" }
+		}
+	}
+	
+	focus = {
+		id = ITA_claims_britann
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = ITA_war_gre focus = ITA_gre_kompro }
+		x = 24
+		y = 6
+		cost = 5
+		completion_reward = {
+			add_state_claim = 116
+			add_state_claim = 183
+			add_state_claim = 452
+			add_state_claim = 447
+			add_state_claim = 446
+			add_state_claim = 453
+			add_state_claim = 454
+			add_state_claim = 455
+			add_state_claim = 552
+			add_state_claim = 456
+			add_state_claim = 457
+			add_state_claim = 767
+			add_state_claim = 551
+			add_state_claim = 549
+			add_state_claim = 269
+			add_named_threat = { threat = 7.5 name = "Italien verlangt britische Gebiete" }
+		}
+	}
+	
+	focus = {
+		id = ITA_claims_schweiz
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = ITA_war_gre focus = ITA_gre_kompro }
+		x = 28
+		y = 6
+		cost = 5
+		completion_reward = {
+			add_state_claim = 3
+			add_state_claim = 151
+			add_named_threat = { threat = 5 name = "Italien verlangt Schweiz" }
+		}
+	}
+	
+	focus = {
+		id = ITA_new_empire
+		icon = GFX_focus_generic_italy_first
+		prerequisite = { focus = ITA_claims_france }
+		prerequisite = { focus = ITA_claims_britann }
+		prerequisite = { focus = ITA_claims_schweiz }
+		x = 26
+		y = 7
+		cost = 20
+		available = {
+			owns_state = 3 
+			owns_state = 151
+			owns_state = 32
+			owns_state = 735
+			owns_state = 21
+			owns_state = 1
+			owns_state = 116
+			owns_state = 183
+		}
+		completion_reward = {
+			country_event = { id = italy.25 }
+			add_ideas = ITA_new_roman_empire
+		}
+	}
+	
 }
