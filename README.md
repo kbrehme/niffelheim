@@ -1,13 +1,17 @@
 # Niffelheims letztes Abendmahl - Mod for Steam Workshop
 
-
+ 
+ 
+ 
 ## MOD-Overview
+___
 
 - custom events for ITA
 - custom focus for SWE,ITA
 - custom leader/general pictures for GB, SWE, ITA, GER
 
 ### **Changelog**
+___
 
 - **v-1.2**
 
@@ -32,9 +36,10 @@
 
 
 ### **Future Updates**
+___
 
-- [ ]complete ITA focus tree with functions, events and world news
-- [ ]complete SWE focus tree with functions, events and world news
-- [ ]add several new focus functions in GB focus tree
-- [ ]create new factions for SWE,GER,GB and ITA
-- [ ]create new visuals for countrys if politics changes
+- [ ] complete ITA focus tree with functions, events and world news
+- [ ] complete SWE focus tree with functions, events and world news
+- [ ] add several new focus functions in GB focus tree
+- [ ] create new factions for SWE,GER,GB and ITA
+- [ ] create new visuals for countrys if politics changes
