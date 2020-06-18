@@ -1685,6 +1685,7 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			country_event = { id = sweden.1 }
+			news_event = { id = news.337 }
 			add_stability = -0.2
 		}
 	}
@@ -1716,7 +1717,7 @@ focus_tree = {
 		x = 21
 		y = 3
 		completion_reward{
-			
+			country_event = { id = sweden.5 }
 		}
 	}
 	
@@ -1729,8 +1730,30 @@ focus_tree = {
 		}
 		x = 21
 		y = 4
-		completion_reward = {
-			
+		completion_reward{
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				name = mech_army_bonus
+				technology = basic_medium_tank
+				technology = improved_medium_tank
+				technology = advanced_medium_tank
+				technology = mechanised_infantry
+			}	
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+			random_owned_controlled_state ={
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
 		}
 	}
 	
@@ -1743,8 +1766,12 @@ focus_tree = {
 		}
 		x = 21
 		y = 5
-		completion_reward = {
-			
+		completion_reward{
+			195={add_core_of = SWE}
+			216={add_core_of = SWE}
+			215={add_core_of = SWE}
+			213={add_core_of = SWE}
+			add_named_threat = { threat = 5 name = "Leningrad Claim" }
 		}
 	}
 	
@@ -1757,8 +1784,25 @@ focus_tree = {
 		}
 		x = 21
 		y = 6
-		completion_reward = {
-			
+		completion_reward{
+			random_owned_controlled_state ={
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+							modify_building_resources = {
+									building = synthetic_refinery
+									resource = rubber
+									amount = 2
+								}
+							add_building_construction = {
+									type = synthetic_refinery
+									level = 2
+									instant_build = yes
+								}
+						}
 		}
 	}
 	
@@ -1771,8 +1815,8 @@ focus_tree = {
 		}
 		x = 21
 		y = 7
-		completion_reward = {
-			
+		completion_reward{
+			country_event = { id = sweden.7 }
 		}
 	}
 	
@@ -1785,8 +1829,8 @@ focus_tree = {
 		}
 		x = 21
 		y = 8
-		completion_reward = {
-			
+		completion_reward{
+			country_event = { id = sweden.8 }
 		}
 	}
 	
@@ -1799,8 +1843,13 @@ focus_tree = {
 		}
 		x = 21
 		y = 9
-		completion_reward = {
-			
+		completion_reward{
+			add_tech_bonus = {
+				name = ti_bonus
+				bonus = 1.0
+				uses = 2
+				category = trade_interdiction_tree
+			}
 		}
 	}
 	
@@ -1831,8 +1880,8 @@ focus_tree = {
 		}
 		x = 23
 		y = 3
-		completion_reward = {
-			
+		completion_reward{
+			country_event = { id = sweden.9 }
 		}
 	}
 	
@@ -1846,7 +1895,7 @@ focus_tree = {
 		x = 23
 		y = 4
 		completion_reward = {
-			
+			country_event = { id = sweden.12 }
 		}
 	}
 	
@@ -1860,7 +1909,7 @@ focus_tree = {
 		x = 23
 		y = 5
 		completion_reward = {
-			
+			country_event = { id = sweden.13 }
 		}
 	}
 	
@@ -1874,7 +1923,7 @@ focus_tree = {
 		x = 25
 		y = 3
 		completion_reward = {
-			
+			country_event = { id = sweden.14 }
 		}
 	}
 	
@@ -1888,7 +1937,15 @@ focus_tree = {
 		x = 25
 		y = 4
 		completion_reward = {
-			
+			add_manpower = 125000
+			random_owned_controlled_state ={
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+						}
 		}
 	}
 	
@@ -1902,7 +1959,8 @@ focus_tree = {
 		x = 25
 		y = 5
 		completion_reward = {
-			
+			85={add_core_of = SWE}
+			add_named_threat = { threat = 5 name = "Danzig Claim" }
 		}
 	}
 	
@@ -1916,7 +1974,27 @@ focus_tree = {
 		x = 25
 		y = 6
 		completion_reward = {
-			
+			add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 2
+							category = land_doctrine
+							}
+							add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = infantry_weapons
+							category = artillery
+							}
+			random_owned_controlled_state ={
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+							
+						}
 		}
 	}
 	
@@ -1930,7 +2008,15 @@ focus_tree = {
 		x = 25
 		y = 7
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				name = mech_army_bonus
+				technology = basic_medium_tank
+				technology = improved_medium_tank
+				technology = advanced_medium_tank
+				technology = mechanised_infantry
+			}
 		}
 	}
 	
@@ -1944,7 +2030,12 @@ focus_tree = {
 		x = 25
 		y = 8
 		completion_reward = {
-			
+			SOV = 	{
+				add_to_faction = PRC
+				}
+			create_wargoal = { type = annex_everything target = MEN }
+			create_wargoal = { type = annex_everything target = SHX }
+			create_wargoal = { type = annex_everything target = JAP }
 		}
 	}
 	
@@ -1959,7 +2050,7 @@ focus_tree = {
 		x = 23
 		y = 9
 		completion_reward = {
-			
+			country_event = { id = sweden.11 }
 		}
 	}
 	
