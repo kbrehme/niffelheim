@@ -1603,7 +1603,7 @@ focus_tree = {
 			completion_reward = {
 					add_research_slot = 1
 				}
-
+	
 	}
 	focus = {
 		id = extra_tech_slot_2
@@ -1658,17 +1658,18 @@ focus_tree = {
 				}
 
 	}
+	
 	focus = {
 		id = SWE_Ein_neuer_Weg
 		icon = GFX_focus_generic_support_the_left_right
 		cost = 10
 		x = 28
 		y = 0
-		completion_reward{
+		completion_reward = {
 			add_political_power = 150
 		}
-
 	}
+	
 	focus = {
 		id = SWE_links_oder_rechts
 		icon = GFX_goal_unknown
@@ -1682,12 +1683,12 @@ focus_tree = {
 		}
 		x = 23
 		y = 1
-		completion_reward{
+		completion_reward = {
 			country_event = { id = sweden.1 }
 			add_stability = -0.2
 		}
-
 	}
+	
 	focus = {
 		id = SWE_fascista
 		icon = GFX_focus_generic_strike_at_democracy1
@@ -1700,11 +1701,11 @@ focus_tree = {
 		}
 		x = 21
 		y = 2
-		completion_reward{
+		completion_reward = {
 			country_event = { id = sweden.2 }
 		}
-
 	}
+	
 	focus = {
 		id = SWE_guten_tag_fuehrer
 		icon = GFX_goal_tripartite_pact
@@ -1714,8 +1715,11 @@ focus_tree = {
 		}
 		x = 21
 		y = 3
-
+		completion_reward{
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_nur_auf_ketten_nach_paris
 		icon = GFX_focus_cze_military_research_institute
@@ -1725,8 +1729,11 @@ focus_tree = {
 		}
 		x = 21
 		y = 4
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_ein_stueck_von_leningrad
 		icon = GFX_focus_attack_soviet
@@ -1736,8 +1743,11 @@ focus_tree = {
 		}
 		x = 21
 		y = 5
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_plaste_und_elaste
 		icon = GFX_focus_generic_industry_2
@@ -1747,8 +1757,11 @@ focus_tree = {
 		}
 		x = 21
 		y = 6
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_die_benelux_laender
 		icon = GFX_focus_hol_oranje_boven
@@ -1758,8 +1771,11 @@ focus_tree = {
 		}
 		x = 21
 		y = 7
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_britische_inseln
 		icon = GFX_focus_attack_britain
@@ -1769,8 +1785,11 @@ focus_tree = {
 		}
 		x = 21
 		y = 8
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_das_wolfrudel_erweitern
 		icon = GFX_goal_generic_wolf_pack
@@ -1780,8 +1799,11 @@ focus_tree = {
 		}
 		x = 21
 		y = 9
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_marxism
 		icon = GFX_focus_generic_join_comintern
@@ -1794,10 +1816,11 @@ focus_tree = {
 		}
 		x = 25
 		y = 2
-		completion_reward{
+		completion_reward = {
 			country_event = { id = sweden.3 }
 		}
 	}
+	
 	focus = {
 		id = SWE_das_rote_finnland
 		icon = GFX_focus_invite_finland
@@ -1808,8 +1831,11 @@ focus_tree = {
 		}
 		x = 23
 		y = 3
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_zwei_noch
 		icon = GFX_goal_generic_occupy_states_ongoing_war
@@ -1819,8 +1845,11 @@ focus_tree = {
 		}
 		x = 23
 		y = 4
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_die_baltischen_staaten
 		icon = GFX_focus_spr_crush_the_revolution
@@ -1830,8 +1859,11 @@ focus_tree = {
 		}
 		x = 23
 		y = 5
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_papa_stalin
 		icon = GFX_focus_fra_loyalty_stalin
@@ -1841,8 +1873,11 @@ focus_tree = {
 		}
 		x = 25
 		y = 3
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_arbeiter_fliessen
 		icon = GFX_focus_RAJ_seek_help_from_soviet
@@ -1852,8 +1887,11 @@ focus_tree = {
 		}
 		x = 25
 		y = 4
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_ein_stueck_von_polen
 		icon = GFX_focus_generic_polish_deal
@@ -1863,8 +1901,11 @@ focus_tree = {
 		}
 		x = 25
 		y = 5
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_der_fokus_auf_hitler
 		icon = GFX_focus_attack_germany
@@ -1874,8 +1915,11 @@ focus_tree = {
 		}
 		x = 25
 		y = 6
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_mehr_panzer_als_maenner
 		icon = GFX_goal_generic_army_tanks
@@ -1885,8 +1929,11 @@ focus_tree = {
 		}
 		x = 25
 		y = 7
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_asiatisch_rot
 		icon = GFX_focus_chi_one_china_policy
@@ -1896,8 +1943,11 @@ focus_tree = {
 		}
 		x = 25
 		y = 8
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_onser_gegner_in_uebersee
 		icon = GFX_goal_generic_occupy_states_ongoing_war
@@ -1908,8 +1958,11 @@ focus_tree = {
 		}
 		x = 23
 		y = 9
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_demokrati
 		icon = GFX_goal_generic_neutrality_focus
@@ -1923,8 +1976,11 @@ focus_tree = {
 		}
 		x = 28
 		y = 1
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_ein_alter_Bund
 		icon = GFX_focus_hol_the_foundations_of_defense
@@ -1937,8 +1993,11 @@ focus_tree = {
 		}
 		x = 27
 		y = 2
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_daenemark
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
@@ -1947,8 +2006,11 @@ focus_tree = {
 		}
 		x = 27
 		y = 3
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_estland_und_freunde
 		icon = GFX_goal_support_democracy
@@ -1958,8 +2020,11 @@ focus_tree = {
 		}
 		x = 27
 		y = 4
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_benelux_laender
 		icon = GFX_focus_hol_oranje_boven
@@ -1969,11 +2034,11 @@ focus_tree = {
 		}
 		x = 27
 		y = 5
-
+		completion_reward = {
+			
+		}
 	}
-	
-	# WHAT IS GOING ON??
-	
+
 	focus = {
 		id = SWE_hollaendische_Kolonien
 		icon = GFX_focus_hol_oranje_boven
@@ -1983,8 +2048,10 @@ focus_tree = {
 		}
 		x = 27
 		y = 6
+		completion_reward = {
+			
+		}
 	}
-	
 	
 	focus = {
 		id = SWE_britannia_und_wikinger
@@ -1998,8 +2065,11 @@ focus_tree = {
 		}
 		x = 29
 		y = 2
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_ein_deal
 		icon = GFX_goal_generic_intelligence_exchange
@@ -2012,8 +2082,11 @@ focus_tree = {
 		}
 		x = 29
 		y = 3
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_neutral_pakt
 		icon = GFX_goal_anschluss
@@ -2023,8 +2096,11 @@ focus_tree = {
 		}
 		x = 29
 		y = 4
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_koeftespiess
 		icon = GFX_goal_generic_trade
@@ -2034,8 +2110,11 @@ focus_tree = {
 		}
 		x = 29
 		y = 5
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_oelvorkommen_naher_osten
 		icon = GFX_goal_generic_construct_civ_factory
@@ -2045,8 +2124,11 @@ focus_tree = {
 		}
 		x = 29
 		y = 6
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_schweizer_forscher
 		icon = GFX_goal_generic_scientific_exchange
@@ -2056,8 +2138,11 @@ focus_tree = {
 		}
 		x = 29
 		y = 7
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_die_allierten
 		icon = GFX_focus_hol_the_fourth_ally
@@ -2070,8 +2155,11 @@ focus_tree = {
 		}
 		x = 31
 		y = 3
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_skandinaviens_new_deal
 		icon = GFX_focus_chi_mission_to_the_us
@@ -2081,8 +2169,11 @@ focus_tree = {
 		}
 		x = 31
 		y = 4
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_amerikanische_touristen
 		icon = GFX_focus_generic_military_academy
@@ -2092,8 +2183,11 @@ focus_tree = {
 		}
 		x = 31
 		y = 5
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_amerikanische_forscher
 		icon = GFX_goal_generic_scientific_exchange
@@ -2103,8 +2197,12 @@ focus_tree = {
 		}
 		x = 31
 		y = 6
-
+		completion_reward = {
+			
+		}
 	}
+	
+	#JARL
 	
 	focus = {
 		id = SWE_rueckkehr_des_jarls
@@ -2163,8 +2261,34 @@ focus_tree = {
 		}
 		x = 33
 		y = 3
-
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
+	
 	focus = {
 		id = SWE_blutfeden_des_jarls
 		icon = GFX_focus_eng_the_kings_party
@@ -2174,8 +2298,16 @@ focus_tree = {
 		}
 		x = 35
 		y = 3
-
+		completion_reward = {
+			add_political_power = 50
+			diplomatic_relation = {
+				country = ENG
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
 	}
+	
 	focus = {
 		id = SWE_daenewer
 		icon = GFX_focus_hol_gateway_to_europe
@@ -2185,8 +2317,18 @@ focus_tree = {
 		}
 		x = 35
 		y = 5
-
+		completion_reward = {
+			add_manpower = 25000
+			create_wargoal = {
+				type = take_state_focus
+				target = DEN
+				expire = 0
+				generator = { 37 }
+			}
+			add_named_threat = { threat = 2.5 name = "Schweden gegen Dänemark" }
+		}
 	}
+	
 	focus = {
 		id = SWE_wikingerschiffe
 		icon = GFX_focus_generic_navy_battleship2
@@ -2196,8 +2338,28 @@ focus_tree = {
 		}
 		x = 37
 		y = 3
-
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = { is_coastal = yes }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { is_coastal = yes }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
+	
 	focus = {
 		id = SWE_die_fliegenden_drachen
 		icon = GFX_goal_generic_build_airforce
@@ -2207,8 +2369,23 @@ focus_tree = {
 		}
 		x = 37
 		y = 4
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 2.0
+				ahead_reduction = 2
+				uses = 1
+				category = cas_bomber
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
 	}
+	
 	focus = {
 		id = SWE_brutale_berserker
 		icon = GFX_goal_generic_CAS
@@ -2218,8 +2395,25 @@ focus_tree = {
 		}
 		x = 37
 		y = 5
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = marines
+				technology = marines2
+				technology = marines3
+			}
+			add_ideas = SWE_brutal_viking
+		}
 	}
+	
 	focus = {
 		id = SWE_danzig_fuer_uns
 		icon = GFX_focus_usa_reestablish_the_gold_standard
@@ -2232,8 +2426,12 @@ focus_tree = {
 		}
 		x = 37
 		y = 6
-
+		completion_reward = {
+			85 = { add_core_of = SWE }
+			add_named_threat = { threat = 5 name = "Schweden verlangt Danzig" }
+		}
 	}
+	
 	focus = {
 		id = SWE_es_gibt_nur_einen_gott
 		icon = GFX_focus_RAJ_lions_of_the_great_war
@@ -2243,41 +2441,56 @@ focus_tree = {
 		}
 		x = 37
 		y = 7
-
+		completion_reward = {
+			763 = { add_core_of = SWE }
+			5 = { add_core_of = SWE }
+			188 = { add_core_of = SWE }
+			add_named_threat = { threat = 5 name = "Schweden verlangt deutsche Ostküste" }
+		}
 	}
+	
 	focus = {
 		id = SWE_traditionelle_koenigshaeuser
 		icon = GFX_focus_generic_monarchy_1
+		cost = 10
+		prerequisite = {
+			focus = SWE_bombastische_freundschaft
+		}
+		x = 37
+		y = 9
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SWE_bombastische_freundschaft
+		icon = GFX_focus_befriend_italy
 		cost = 10
 		prerequisite = {
 			focus = SWE_es_gibt_nur_einen_gott
 		}
 		x = 37
 		y = 8
-
-	}
-	focus = {
-		id = SWE_bombastische_freundschaft
-		icon = GFX_focus_befriend_italy
-		cost = 10
-		prerequisite = {
-			focus = SWE_traditionelle_koenigshaeuser
+		completion_reward = {
+			country_event = { id = sweden.10 }
 		}
-		x = 37
-		y = 9
-
 	}
+	
 	focus = {
 		id = SWE_viva_la_jarl
 		icon = GFX_focus_attack_france
 		cost = 10
 		prerequisite = {
-			focus = SWE_bombastische_freundschaft
+			focus = SWE_traditionelle_koenigshaeuser
 		}
 		x = 37
 		y = 10
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_forscher_vereinigt_euch
 		icon = GFX_goal_tfv_generic_tech_sharing
@@ -2288,8 +2501,11 @@ focus_tree = {
 		}
 		x = 23
 		y = 10
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_die_neuen_handelswege
 		icon = GFX_goal_generic_construct_infrastructure
@@ -2299,8 +2515,36 @@ focus_tree = {
 		}
 		x = 33
 		y = 4
-
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
+	
 	focus = {
 		id = SWE_brauchen_mehr_schmieden
 		icon = GFX_goal_generic_construct_mil_factory
@@ -2310,8 +2554,26 @@ focus_tree = {
 		}
 		x = 33
 		y = 5
-
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
+	
 	focus = {
 		id = SWE_der_weg_mit_gottmarck
 		icon = GFX_focus_ger_return_of_the_kaiser
@@ -2321,8 +2583,16 @@ focus_tree = {
 		}
 		x = 33
 		y = 7
-
+		completion_reward = {
+			if = { 
+				limit = { GER = { is_in_faction = no } }
+				GER = { create_faction = "Mittelmächte" }
+			}
+			GER = { add_to_faction = SWE }
+			country_event = { id = sweden.6 }
+		}
 	}
+	
 	focus = {
 		id = SWE_britannia_fuer_uns
 		icon = GFX_focus_attack_britain
@@ -2332,8 +2602,11 @@ focus_tree = {
 		}
 		x = 35
 		y = 9
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_befreiung_kolonie_britannia
 		icon = GFX_focus_eng_move_to_secure_the_dominions
@@ -2344,8 +2617,11 @@ focus_tree = {
 		}
 		x = 35
 		y = 8
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_moskau_kennt_keine_grenze
 		icon = GFX_focus_attack_soviet
@@ -2358,8 +2634,18 @@ focus_tree = {
 		}
 		x = 33
 		y = 6
-
+		completion_reward = {
+			195 = { add_core_of = SWE }
+			216 = { add_core_of = SWE }
+			215 = { add_core_of = SWE }
+			213 = { add_core_of = SWE }
+			722 = { add_core_of = SWE }
+			147 = { add_core_of = SWE }
+			146 = { add_core_of = SWE }
+			add_named_threat = { threat = 5 name = "Schweden gegen Russland" }
+		}
 	}
+	
 	focus = {
 		id = SWE_die_13_kolonien
 		icon = GFX_goal_generic_occupy_states_ongoing_war
@@ -2369,8 +2655,11 @@ focus_tree = {
 		}
 		x = 35
 		y = 10
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_eine_fehde_mit_den_marck
 		icon = GFX_goal_generic_axis_build_infantry
@@ -2380,8 +2669,11 @@ focus_tree = {
 		}
 		x = 33
 		y = 8
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_australiens_valhalla
 		icon = GFX_focus_attack_australia
@@ -2391,8 +2683,11 @@ focus_tree = {
 		}
 		x = 35
 		y = 11
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_gewuerzhandel_kontrolle
 		icon = GFX_focus_attack_india
@@ -2402,8 +2697,11 @@ focus_tree = {
 		}
 		x = 35
 		y = 12
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_dday_round_2
 		icon = GFX_focus_attack_france
@@ -2413,8 +2711,11 @@ focus_tree = {
 		}
 		x = 33
 		y = 9
-
+		completion_reward = {
+			
+		}
 	}
+	
 	focus = {
 		id = SWE_sichern_des_westsektors
 		icon = GFX_goal_generic_construct_infrastructure
@@ -2424,6 +2725,9 @@ focus_tree = {
 		}
 		x = 33
 		y = 10
-
+		completion_reward = {
+			
+		}
 	}
+	
 }

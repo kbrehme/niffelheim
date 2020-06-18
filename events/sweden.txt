@@ -74,3 +74,15 @@ country_event = {
 		add_popularity = { ideology = neutrality popularity = 0.50 }
     }	
 }
+
+#Sweden with Germany
+country_event = {
+	id = sweden.6
+    title = sweden.6.t
+    desc = sweden.6.d
+    is_triggered_only = yes
+	option = {
+        name = sweden.6.a
+		add_named_threat = { threat = 1 name = "Schwedischer Bündnis" }
+    }	
+}

@@ -4524,4 +4524,8 @@ spriteTypes = {
 		name = "GFX_idea_ITA_new_roman_empire"
 		texturefile = "gfx/interface/ideas/idea_saf_ossewabrandwag_fascism.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_SWE_brutal_viking"
+		texturefile = "gfx/interface/ideas/idea_raj_indian_gentlemen_officers.dds"
+	}
 }

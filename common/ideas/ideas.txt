@@ -35,5 +35,15 @@ ideas = {
 				war_support_weekly = 0.001
 			}
 		}
+		SWE_brutal_viking = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				special_forces_attack_factor = 0.05
+				amphibious_invasion = 0.20
+				army_speed_factor = 0.1
+			}
+		}
 	}
 }
