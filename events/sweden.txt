@@ -223,3 +223,16 @@ country_event = {
 		add_named_threat = { threat = 2 name = "Schwedisch-Italienisches Bündnis" }
 	}
 }
+
+#Romania Scandinvia
+country_event = {
+	id = sweden.15
+	title = sweden.15.t
+	desc = sweden.15.d
+	is_triggered_only = yes
+	option = {
+		name = sweden.15.a
+		ITA = { add_to_faction = ROM }
+		add_named_threat = { threat = 1 name = "Schwedisch-Rumänisches Bündnis" }
+	}
+}

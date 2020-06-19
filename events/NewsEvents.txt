@@ -13139,9 +13139,9 @@ news_event = {
 	title = news.337.title
 	desc = news.337.desc
 	picture = GFX_news_event_024
-	is_triggered_only = yes
 	major = yes
-		mean_time_to_happen = {
+	is_triggered_only = yes
+	mean_time_to_happen = {
 		days = 2
 	}
 	option = {
