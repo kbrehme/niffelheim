@@ -83,6 +83,11 @@ country_event = {
     is_triggered_only = yes
 	option = {
         name = sweden.6.a
+		if = { 
+			limit = { GER = { is_in_faction = no } }
+			GER = { create_faction = "Mittelmächte" }
+		}
+		GER = { add_to_faction = SWE }
 		add_named_threat = { threat = 1 name = "Schwedischer Bündnis" }
     }	
 }
@@ -199,5 +204,22 @@ country_event = {
 				}
 		add_opinion_modifier = { target = SOV modifier = large_increase }
 		add_named_threat = { threat = 1 name = "Schwedischer Beitritt Achsenmächte" }
+	}
+}
+
+#Bombastic Friendship
+country_event = {
+	id = sweden.10
+	title = sweden.10.t
+	desc = sweden.10.d
+	is_triggered_only = yes
+	option = {
+		name = sweden.10.a
+		if = { 
+			limit = { ITA = { is_in_faction = no } }
+			ITA = { create_faction = "Scandinavia-Italia" }
+		}
+		ITA = { add_to_faction = SWE }
+		add_named_threat = { threat = 2 name = "Schwedisch-Italienisches Bündnis" }
 	}
 }
