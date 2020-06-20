@@ -3503,7 +3503,7 @@ country_event = {
 	id = wtt_germany.1002
 	title = wtt_germany.1001.t
 	desc = wtt_germany.1002.desc
-	picture = GFX_report_event_hindenburg_flames
+	picture = "portrait_GER_vicky.dds"
 
 	is_triggered_only = yes
 

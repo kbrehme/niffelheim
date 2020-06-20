@@ -938,7 +938,7 @@ focus_tree = {
 	focus = {
 		id = SWE_nur_auf_ketten_nach_paris
 		icon = GFX_focus_cze_military_research_institute
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = SWE_guten_tag_fuehrer
 		}
