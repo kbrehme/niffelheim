@@ -28,6 +28,7 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = sweden.2.a
+		add_popularity = { ideology = fascism popularity = 0.40 }
         set_politics = {
 			ruling_party = fascism
 			elections_allowed = no
@@ -47,6 +48,7 @@ country_event = {
     is_triggered_only = yes
 	option = {
         name = sweden.3.a
+		add_popularity = { ideology = communism popularity = 0.40 }
         set_politics = {
 			ruling_party = communism
 			elections_allowed = no

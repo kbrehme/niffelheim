@@ -295,9 +295,9 @@ set_autonomy = {
 }
 
 create_country_leader = {
-	name = "Franklin Delano Roosevelt"
+	name = "Florian Roosevelt"
 	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
-	picture = "portrait_USA_flopf.dds"
+	picture = "portrait_USA_demo.dds"
 	expire = "1947.1.1"
 	ideology = liberalism
 	traits = {
@@ -306,9 +306,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "William Dudley Pelley"
+	name = "Florenz Dudley"
 	desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
-	picture = "Portrait_USA_William_Dudley_Pelley.dds"
+	picture = "portrait_USA_fas.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -317,9 +317,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Earl Browder"
+	name = "Flopf Browder"
 	desc = "POLITICS_EARL_BROWDER_DESC"
-	picture = "portrait_USA_earl_browder.dds"
+	picture = "portrait_USA_kom.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
