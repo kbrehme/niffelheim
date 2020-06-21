@@ -385,9 +385,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-  name = "Blyert Oni-Chan"
+  name = "Kyuichi Tokuda"
   desc = "POLITICS_Hirohito_DESC"
-  picture = "portrait_jap_blyert.dds"
+  picture = "GFX_Portrait_kyuichi_tokuda"
   expire = "1989.1.1"
   ideology = marxism
   traits = {
