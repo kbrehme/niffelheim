@@ -79,6 +79,9 @@ focus_tree = {
 		cost = 10
 		x = 0
 		y = 1
+		prerequisite = {
+			focus = SWE_naval_effort
+		}
 		relative_position_id = SWE_naval_effort
 			search_filters = { FOCUS_FILTER_RESEARCH }
 			available_if_capitulated = yes
