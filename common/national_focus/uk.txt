@@ -9362,7 +9362,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_country_leader = { ruling_only = yes name = "Edward VIII" }
+					has_country_leader = { ruling_only = yes name = "Frank aus MGD" }
 				}
 				add_stability = 0.05
 				remove_country_leader_trait = inexperienced_imperialist
@@ -9370,7 +9370,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					NOT = { has_country_leader = { ruling_only = yes name = "Edward VIII" } }
+					NOT = { has_country_leader = { ruling_only = yes name = "Frank aus MGD" } }
 				}
 				add_stability = 0.05
 				add_war_support = 0.1
