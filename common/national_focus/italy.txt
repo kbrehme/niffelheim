@@ -2622,7 +2622,7 @@ focus_tree = {
     }
   }
   
-  
+	#KAISOLINI
   
     focus = {
 		id = ITA_kaisolini
@@ -2920,4 +2920,16 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = ITA_make_italy_great_again
+		icon = GFX_focus_generic_italy_first
+		prerequisite = { focus = ITA_friend_jugos }
+		prerequisite = { focus = ITA_newEconomy }
+		relative_position_id = ITA_newEconomy
+		x = 0
+		y = 2
+		completion_reward = {
+			set_rule = { can_create_factions = yes }^
+		}
+	}
 }
