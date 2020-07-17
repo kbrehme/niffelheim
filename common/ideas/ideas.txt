@@ -45,5 +45,14 @@ ideas = {
 				army_speed_factor = 0.1
 			}
 		}
+		GER_fuehrerkult = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.005
+				war_support_weekly = 0.01
+			}
+		}
 	}
 }

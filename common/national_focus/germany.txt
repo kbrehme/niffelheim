@@ -4870,7 +4870,7 @@ focus_tree = {
 				is_in_faction_with = DEN
 			}
 		}
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = GER_plan_z
 		cost = 10
@@ -4932,7 +4932,7 @@ focus_tree = {
 				NOT = { country_exists = NOR }
 			}
 		}
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = GER_denmark_friend
 		cost = 10
@@ -4978,68 +4978,6 @@ focus_tree = {
 				technology = landing_craft
 				technology = tank_landing_craft
 			}			
-		}
-	}
-
-	focus = {
-		id = GER_dutch_friend
-		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = GER_denmark_friend }
-		available = {
-			has_government = fascism
-			NOT = { has_war_with = HOL }
-			HOL = {
-				custom_trigger_tooltip = {
-					tooltip = GER_alone_or_peace_faction_tt
-					is_alone_or_in_faction_at_peace_with_GER = yes
-				}
-			}
-		}
-		bypass = {
-			OR = {
-				HOL = { is_in_faction_with = GER }
-				NOT = { country_exists = HOL }
-			}
-		}
-		x = 1
-		y = 1
-		relative_position_id = GER_denmark_friend
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}	
-		completion_reward = {
-			HOL = {
-				add_opinion_modifier = { target = GER modifier = ger_naval_intimidation_focus }
-				if = {
-					limit = {
-						GER = {
-							has_government = fascism
-						}
-					}
-					add_timed_idea = { idea = fascist_influence days = 1095 }
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = communism
-						}
-					}
-					add_timed_idea = { idea = communist_influence days = 1095 }
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = democratic
-						}
-					}
-					add_timed_idea = { idea = democratic_influence days = 1095 }
-				}
-				country_event = { id = generic.1 }
-			}
-			JAP = {
-				add_opinion_modifier = { target = GER modifier = befriended_the_dutch }
-			}
 		}
 	}
 
@@ -5157,6 +5095,96 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = sour_loser
 			add_ideas = triumphant_will
+		}
+	}
+	
+	focus = {
+		id = GER_redifine_nation
+		prerequisite = { focus = GER_improve_national_spirit }
+		icon = GFX_goal_support_fascism
+		x = 0
+		y = 1
+		relative_position_id = GER_improve_national_spirit
+		cost = 10
+		completion_reward = {
+			add_stability = -0.20
+			add_ideas = GER_fuehrerkult
+		}
+	}
+	
+	focus = {
+		id = GER_knights_of_north
+		prerequisite = { focus = GER_sweden_friend }
+		prerequisite = { focus = GER_redifine_nation }
+		icon = GFX_goal_generic_military_deal
+		x = -1
+		y = 1
+		relative_position_id = GER_sweden_friend
+		cost = 10
+		available = {
+			if = {
+				fascism > 0.40
+				DEN = { fascism > 0.40 }
+				NOR = { fascism > 0.40 }
+			}
+		}
+		completion_reward = {
+			SWE = { 
+				set_politics = { 
+					ruling_party = fascism 
+					elections_allowed = no
+				}
+				annex_country = { target = DEN transfer_troops = yes }
+				annex_country = { target = NOR transfer_troops = yes }
+				if = 
+				{
+					limit = {
+						has_war_with = GER
+					}
+					white_peace = GER
+				}
+			}
+			add_to_faction = SWE
+		}
+	}
+	
+	focus = {
+		id = GER_integrate_the_north
+		prerequisite = { focus = GER_knights_of_north }
+		icon = GFX_goal_support_fascism
+		x = 0
+		y = 1
+		relative_position_id = GER_knights_of_north
+		cost = 20
+		available = {
+			BEL = { is_subject_of = GER }
+			HOL = { is_subject_of = GER }
+			SWE = { is_in_faction_with = GER }
+		}
+		completion_reward = {
+			puppet = SWE
+			add_state_core = 7
+			add_state_core = 36
+			add_state_core = 35
+			add_state_core = 6
+			add_state_core = 34
+			add_state_core = 29
+			add_state_core = 8
+			add_state_core = 28
+			add_state_core = 151
+			add_state_core = 3
+			add_state_core = 102
+			annex_country = { target = HOL transfer_troops = yes }
+			annex_country = { target = BEL transfer_troops = yes }
+			if = {
+				limit = {
+					FRA = {
+						is_puppet_of = GER
+						controls_state = 28
+					}
+				}
+				transfer_state = 28
+			}
 		}
 	}
 
@@ -5455,7 +5483,6 @@ focus_tree = {
 
 	focus = {
 		id = GER_second_ljubljana_award
-		mutually_exclusive = { focus = GER_war_with_greece } 
 		prerequisite = { focus = GER_fate_of_yugoslavia }
 		icon = GFX_goal_generic_forceful_treaty
 		available = {
@@ -5597,35 +5624,6 @@ focus_tree = {
 				country_event = { id = germany.101 }
 			}
 			custom_effect_tooltip = GER_second_ljubljana_award_tt
-		}
-	}
-
-	focus = {
-		id = GER_war_with_greece
-		prerequisite = { focus = GER_fate_of_yugoslavia }
-		mutually_exclusive = { focus = GER_second_ljubljana_award } 
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		will_lead_to_war_with = GRE
-		available = {
-			GRE = { 
-				exists = yes
-				has_war = yes
-			}
-			NOT = { is_in_faction_with = GRE }
-		}
-		x = 2
-		y = 1
-		relative_position_id = GER_fate_of_yugoslavia
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}	
-		completion_reward = {
-			create_wargoal = {
-				target = GRE
-				type = annex_everything
-				expire = 0
-			}
 		}
 	}
 

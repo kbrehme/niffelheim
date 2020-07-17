@@ -4528,4 +4528,9 @@ spriteTypes = {
 		name = "GFX_idea_SWE_brutal_viking"
 		texturefile = "gfx/interface/ideas/idea_raj_indian_gentlemen_officers.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_idea_GER_fuehrerkult"
+		texturefile = "gfx/interface/ideas/idea_sour_loser.dds"
+	}
 }

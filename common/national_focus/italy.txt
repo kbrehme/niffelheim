@@ -2929,7 +2929,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		completion_reward = {
-			set_rule = { can_create_factions = yes }^
+			set_rule = { can_create_factions = yes }
 		}
 	}
 }
