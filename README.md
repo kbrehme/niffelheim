@@ -7,7 +7,7 @@
 ___
 
 - custom events for ITA
-- custom focus for SWE,ITA
+- custom focus for SWE,ITA,SOV,SWI,USA 
 - custom leader/general pictures for GB, SWE, ITA, GER
 
 ### **Changelog**
