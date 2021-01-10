@@ -7,18 +7,12 @@
 ___
 
 - custom events for ITA
-- custom focus for SWE,ITA,SOV,SWI,USA 
+- custom focus for SWE,ITA
 - custom leader/general pictures for GB, SWE, ITA, GER
 
 ### **Changelog**
 ___
-- **v-1.3**
 
-    - new focus and event tree for SWI
-    - updating focus tree SOV
-    - updating tree USA
-    
-    
 - **v-1.2**
 
     - complete new focus tree for SWE without functions

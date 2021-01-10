@@ -1,4 +1,4 @@
-version="1.9.3"
+version="1.10.3"
 tags={
 	"Alternative History"
 	"Historical"
@@ -6,5 +6,5 @@ tags={
 }
 name="Niffelheim"
 picture="thumbnail.png"
-supported_version="1.9.3"
-remote_file_id="2131514242"
+supported_version="1.10.3"
+remote_file_id="2355945328"

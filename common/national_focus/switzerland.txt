@@ -1,0 +1,313 @@
+focus_tree = {
+	id = switzerland
+	continuous_focus_position = { x = 0 y = 1000 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SWI
+		}
+	}
+	#Aktivdienstgeneration
+	focus = {
+		id = SWI_aktivdienstgeneration
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 0
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		completion_reward = {
+			
+						army_experience = 5
+						add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+					
+		}
+	}
+
+	#Fluechtlinge aufnehmen
+	focus = {
+		id = SWI_fluechtlinge_aufnehmen
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = SWI_aktivdienstgeneration  }
+		completion_reward = {
+			add_manpower = 50000
+			add_ideas = SWI_fluechtlinge
+			
+		}
+	}
+
+	#Schweizerkoenig
+	focus = {
+		id = SWI_schweizerkoenig
+		icon = GFX_focus_generic_monarchy_1
+		x = 8
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SWI_ein_neuer_beginn  }
+		mutually_exclusive = { focus = SWI_einladung_zu_deutschen_versammlungen  focus = SWI_bolschewisierung  focus = SWI_die_schweizer_eidgenosenschaft  }
+	}
+
+	#Zuwachs fuer die Nationalisten
+	focus = {
+		id = SWI_zuwachs_fuer_die_nationalisten
+		icon = GFX_focus_ger_oppose_hitler
+		x = 12
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SWI_einladung_zu_deutschen_versammlungen  }
+		completion_reward = {
+			add_popularity = { 
+			ideology = fascism 
+			popularity = 0.1
+			}
+			
+		}
+	}
+
+	#Tirol muss vereinigt werden
+	focus = {
+		id = SWI_tirol_muss_vereinigt_werden
+		icon = GFX_SWI_tirol_muss_vereinigt_werden-322
+		x = 10
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SWI_das_alpinenreich  }
+	}
+
+	#Das Alpinenreich
+	focus = {
+		id = SWI_das_alpinenreich
+		icon = GFX_focus_chi_one_china_policy
+		x = 10
+		y = 4
+		cost = 15
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SWI_referendum_fuer_die_alpen  }
+	}
+
+	#Beziehung zu Oesterreich
+	focus = {
+		id = SWI_beziehung_zu_oesterreich
+		icon = GFX_goal_generic_major_alliance
+		x = 10
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SWI_die_schweizer_eidgenosenschaft  }
+	}
+
+	#Referendum fuer die Alpen
+	focus = {
+		id = SWI_referendum_fuer_die_alpen
+		icon = GFX_focus_focus_fra_border
+		x = 10
+		y = 3
+		cost = 15
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SWI_beziehung_zu_oesterreich  }
+	}
+
+	#Ein neuer Beginn
+	focus = {
+		id = SWI_ein_neuer_beginn
+		icon = GFX_goal_generic_demand_territory
+		x = 9
+		y = 0
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			
+						add_political_power = 120
+					
+			
+		}
+	}
+
+	#Cern und seine Wissenschaft
+	focus = {
+		id = SWI_cern_und_seine_wissenschaft
+		icon = GFX_SWI_cern_und_seine_wissenschaft-440
+		x = 0
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SWI_fluechtlinge_aufnehmen  }
+	}
+
+	#Neue Technologien für die Armee
+	focus = {
+		id = SWI_neue_technologien_fur_die_armee
+		icon = GFX_focus_secret_rearmament
+		x = 2
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SWI_fluechtlinge_aufnehmen  }
+	}
+
+	#Schweizer Autobahnen
+	focus = {
+		id = SWI_schweizer_autobahnen
+		icon = GFX_focus_generic_africa_infrastructure
+		x = 16
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SWI_investitionen_im_land  }
+	}
+
+	#Die Werke boomen
+	focus = {
+		id = SWI_die_werke_boomen
+		icon = GFX_focus_generic_industry_3
+		x = 6
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SWI_arbeiterzuwachs  }
+	}
+
+	#Einladung zu deutschen Versammlungen
+	focus = {
+		id = SWI_einladung_zu_deutschen_versammlungen
+		icon = GFX_focus_chi_mission_to_germany
+		x = 12
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SWI_ein_neuer_beginn  }
+		mutually_exclusive = { focus = SWI_schweizerkoenig  focus = SWI_bolschewisierung  focus = SWI_die_schweizer_eidgenosenschaft  }
+		ai_will_do = { factor = 1 }
+		available = {
+			
+						OR = {
+							has_government = democratic
+							has_government = neutrality
+						}
+					
+		}
+		completion_reward = {
+			
+					
+					
+			add_political_power = 50
+			set_political_party = { 
+			ideology = facism
+			popularity = 0.15 
+			}
+			
+		}
+	}
+
+	#Bolschewisierung
+	focus = {
+		id = SWI_bolschewisierung
+		icon = GFX_SWI_bolschewisierung-426
+		x = 6
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SWI_ein_neuer_beginn  }
+		mutually_exclusive = { focus = SWI_einladung_zu_deutschen_versammlungen  focus = SWI_schweizerkoenig  focus = SWI_die_schweizer_eidgenosenschaft  }
+	}
+
+	#Die Schweizer Eidgenosenschaft
+	focus = {
+		id = SWI_die_schweizer_eidgenosenschaft
+		icon = GFX_SWI_die_schweizer_eidgenosenschaft-427
+		x = 10
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SWI_ein_neuer_beginn  }
+		mutually_exclusive = { focus = SWI_schweizerkoenig  focus = SWI_einladung_zu_deutschen_versammlungen  focus = SWI_bolschewisierung  }
+	}
+
+	#Schweizer Banken
+	focus = {
+		id = SWI_schweizer_banken
+		icon = GFX_focus_TUR_reconfigure_turkish_foreign_policy
+		x = 15
+		y = 0
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+
+	#Investitionen im Land
+	focus = {
+		id = SWI_investitionen_im_land
+		icon = GFX_focus_generic_industry_3
+		x = 15
+		y = 1
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SWI_schweizer_banken  }
+	}
+
+	#Arbeiterzuwachs
+	focus = {
+		id = SWI_arbeiterzuwachs
+		icon = GFX_focus_generic_soviet_politics
+		x = 6
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SWI_bolschewisierung  }
+		completion_reward = {
+			add_popularity = { 
+			ideology = communism 
+			popularity = 0.1 
+			}
+			
+		}
+	}
+
+}
