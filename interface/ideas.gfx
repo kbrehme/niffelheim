@@ -4528,9 +4528,20 @@ spriteTypes = {
 		name = "GFX_idea_SWE_brutal_viking"
 		texturefile = "gfx/interface/ideas/idea_raj_indian_gentlemen_officers.dds"
 	}
-	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_idea_GER_fuehrerkult"
 		texturefile = "gfx/interface/ideas/idea_sour_loser.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOV_facistic_movement"
+		texturefile = "gfx/interface/ideas/idea_sour_loser.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOV_democratic_movement"
+		texturefile = "gfx/interface/ideas/idea_generic_communist_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOV_social_democratic_research"
+		texturefile = "gfx/interface/ideas/idea_jap_supremacy_of_technology.dds"
 	}
 }

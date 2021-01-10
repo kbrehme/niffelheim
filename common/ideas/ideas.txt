@@ -50,8 +50,34 @@ ideas = {
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
 			modifier = {
-				stability_weekly = 0.005
+				stability_weekly = 0.0025
 				war_support_weekly = 0.01
+			}
+		}
+		SOV_facistic_movement = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				fascism_drift = 0.1
+				neutrality_drift = 0.2
+			}
+		}
+		SOV_democratic_movement = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				democratic_drift = 0.1
+				stability_weekly = 0.001
+			}
+		}
+		SOV_social_democratic_research = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor  = 0.10
 			}
 		}
 	}

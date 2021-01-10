@@ -2764,11 +2764,10 @@
 
 	focus = {
 		id = SOV_true_way
-		#icon = 
-		mutually_exclusive = { focus = SOV_democratic_change }
+		icon = GFX_goal_support_communism
+		mutually_exclusive = { focus = SOV_democratic_change focus = SOV_change_to_tsar  }
 		x = 20
 		y = 0
-		#relative_position_id = SOV_great_purge
 		cost = 5
 		available_if_capitulated = yes
 		completion_reward = {
@@ -2776,39 +2775,335 @@
 			add_stability = 0.05
 		}
 	}
+	
+	#DEMOCRATIC_FOCUS
 
 	focus = {
 		id = SOV_democratic_change
-		#icon = 
-		mutually_exclusive = { focus = SOV_true_way focus = SOV_change_to_zsar }
-		#prerequisite = { focus = SOV_nkvd_primacy }
-		x = 22
+		icon = GFX_goal_generic_major_alliance
+		mutually_exclusive = { focus = SOV_true_way focus = SOV_change_to_tsar }
+		x = 24
 		y = 0
-		#relative_position_id = SOV_great_purge
 		cost = 10
 		available_if_capitulated = yes
 		completion_reward = {
 			add_popularity = { ideology = democratic popularity = 0.10 }
-			add_idea = SOV_democratic_movement
+			add_timed_idea = {
+					idea = SOV_democratic_movement
+					days = 720
+			}
 			add_war_support = -0.10
 		}
 	}
 	
 	focus = {
-		id = SOV_change_to_zsar
-		#icon = 
-		mutually_exclusive = { focus = SOV_true_way focus = SOV_democratic_change}
-		#prerequisite = { focus = SOV_nkvd_primacy }
-		x = 24
+		id = SOV_democratic_revolution
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { focus = SOV_democratic_change }
+		x = 0
+		y = 1
+		relative_position_id = SOV_democratic_change
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+			democratic > 0.4
+		}
+		completion_reward = {
+			add_popularity = { ideology = democratic popularity = 0.15 }
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_tannu_integration
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = SOV_democratic_revolution }
+		x = 0
+		y = 1
+		relative_position_id = SOV_democratic_revolution
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+			annex_country = { target = TAN }
+		}
+	}
+	
+	focus = {
+		id = SOV_release_ukraine_and_white_russia
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = SOV_tannu_integration }
+		x = -2
+		y = 1
+		relative_position_id = SOV_tannu_integration
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+			release_puppet = UKR
+			release_puppet = BLR
+		}
+	}
+	
+	focus = {
+		id = SOV_soviet_infulence
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = SOV_release_ukraine_and_white_russia }
+		x = 0
+		y = 1
+		relative_position_id = SOV_release_ukraine_and_white_russia
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+			POL = {
+				add_popularity = { ideology = democratic popularity = 0.10 }
+				add_timed_idea = {
+						idea = SOV_democratic_movement
+						days = 720
+				}
+			}
+			LIT = {
+				add_popularity = { ideology = democratic popularity = 0.10 }
+				add_timed_idea = {
+						idea = SOV_democratic_movement
+						days = 720
+				}
+			}
+			LAT = {
+				add_popularity = { ideology = democratic popularity = 0.10 }
+				add_timed_idea = {
+						idea = SOV_democratic_movement
+						days = 720
+				}
+			}
+			EST = {
+				add_popularity = { ideology = democratic popularity = 0.10 }
+				add_timed_idea = {
+						idea = SOV_democratic_movement
+						days = 720
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_balcan_treaty
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = SOV_soviet_infulence }
+		x = 0
+		y = 1
+		relative_position_id = SOV_soviet_infulence
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+			POL = { democratic > 0.3 }
+			LIT = { democratic > 0.4 }
+			LAT = { democratic > 0.4 }
+			EST = { democratic > 0.4 }
+		}
+		completion_reward = {
+			LIT = { 
+				transfer_state = 784
+				annex_country = { target = LAT }
+				annex_country = { target = EST }
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = yes
+				}
+			}
+			add_to_faction = LIT
+			UKR = {
+				transfer_state = 91
+				transfer_state = 89
+				transfer_state = 93
+			}
+			BLR = {
+				transfer_state = 94
+				transfer_state = 95
+				transfer_state = 96
+			}
+			give_guarantee = POL
+		}
+	}
+	
+	focus = {
+		id = SOV_southern_influence
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = SOV_tannu_integration }
+		x = 0
+		y = 1
+		relative_position_id = SOV_tannu_integration
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+			PER = {
+				add_popularity = { ideology = democratic popularity = 0.20 }
+				add_timed_idea = {
+						idea = SOV_democratic_movement
+						days = 720
+				}
+			}
+			IRQ = {
+				add_popularity = { ideology = democratic popularity = 0.20 }
+				add_timed_idea = {
+						idea = SOV_democratic_movement
+						days = 720
+				}
+			}
+			AFG = {
+				add_popularity = { ideology = democratic popularity = 0.20 }
+				add_timed_idea = {
+						idea = SOV_democratic_movement
+						days = 720
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_persian_pact
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = SOV_southern_influence }
+		x = 0
+		y = 1
+		relative_position_id = SOV_southern_influence
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+			PER = { democratic > 0.4 }
+			IRQ = { democratic > 0.4 }
+			AFG = { democratic > 0.4 }
+		}
+		completion_reward = {
+			PER = {
+				add_popularity = { ideology = democratic popularity = 0.10 }
+				annex_country = { target = IRQ }
+				annex_country = { target = AFG }
+				add_state_core = 676
+				add_state_core = 675
+				add_state_core = 291
+				add_state_core = 415
+				add_state_core = 267
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = yes
+				}
+			}
+			add_to_faction = PER
+		}
+	}
+	
+	focus = {
+		id = SOV_help_for_allies
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = SOV_persian_pact }
+		prerequisite = { focus = SOV_balcan_treaty }
+		x = 1
+		y = 1
+		relative_position_id = SOV_balcan_treaty
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+			UKR = { 
+				add_manpower = 150000 
+				add_ideas = SOV_social_democratic_research
+			}
+			LIT = { 
+				add_manpower = 100000 
+				add_ideas = SOV_social_democratic_research
+			}
+			BLR = { 
+				add_manpower = 100000 
+				add_ideas = SOV_social_democratic_research
+			}
+			PER = { 
+				add_manpower = 150000 
+				add_ideas = SOV_social_democratic_research
+			}
+			add_manpower = -500000
+			add_ideas = SOV_social_democratic_research
+		}
+	}
+	
+	focus = {
+		id = SOV_offense_is_best_defense
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = SOV_help_for_allies }
+		x = 0
+		y = 1
+		relative_position_id = SOV_help_for_allies
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = GER
+				expire = 0
+			} 
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = JAP
+				expire = 0
+			} 
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ITA
+				expire = 0
+			} 
+		}
+	}
+	
+	focus = {
+		id = SOV_change_to_tsar
+		icon = GFX_goal_molotov_ribbentrop_pact
+		mutually_exclusive = { focus = SOV_true_way focus = SOV_democratic_change }
+		x = 28
 		y = 0
-		#relative_position_id = SOV_great_purge
 		cost = 10
 		available_if_capitulated = yes
 		completion_reward = {
 			add_popularity = { ideology = fascism popularity = 0.10 }
 			add_popularity = { ideology = neutrality popularity = 0.10 }
-			add_idea = SOV_facistic_movement
 			add_stability = -0.10
+			add_timed_idea = {
+					idea = SOV_facistic_movement
+					days = 720
+			}
+		}
+	}
+	
+	#FACIST_FOCUS
+	
+	focus = {
+		id = SOV_tsar_leader
+		#icon = 
+		mutually_exclusive = { focus = SOV_lost_tsar_lady }
+		prerequisite = { focus = SOV_change_to_tsar }
+		x = -2
+		y = 1
+		relative_position_id = SOV_change_to_tsar
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+			
+		}
+	}
+	
+	#TSAR_FOCUS
+	
+	focus = {
+		id = SOV_lost_tsar_lady
+		#icon = 
+		mutually_exclusive = { focus = SOV_tsar_leader }
+		prerequisite = { focus = SOV_change_to_tsar }
+		x = 0
+		y = 1
+		relative_position_id = SOV_change_to_tsar
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+			
 		}
 	}
 
