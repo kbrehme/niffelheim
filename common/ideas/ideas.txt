@@ -80,5 +80,19 @@ ideas = {
 				research_speed_factor  = 0.10
 			}
 		}
+		SWI_einwanderer = {
+			picture = prc_low_popular_support3
+			modifier = {
+				conscription = 0.02
+			}
+		}
+
+		SWI_ueberdenken_aussenpolitk = {
+			picture = generic_neutrality_drift_bonus
+			modifier = {
+				justify_war_goal_time = -0.5
+				join_faction_tension = -0.5
+			}
+		}
 	}
 }

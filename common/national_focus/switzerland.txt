@@ -20,14 +20,14 @@ focus_tree = {
 		}
 		completion_reward = {
 			
-						army_experience = 5
+						army_experience = 10
 						add_tech_bonus = {
 							name = land_doc_bonus
 							bonus = 1.0
 							uses = 1
 							category = land_doctrine
-						}
-					
+						}		
+			
 		}
 	}
 
@@ -44,7 +44,9 @@ focus_tree = {
 		prerequisite = { focus = SWI_aktivdienstgeneration  }
 		completion_reward = {
 			add_manpower = 50000
-			add_ideas = SWI_fluechtlinge
+			add_ideas = SWI_einwanderer
+			
+			
 			
 		}
 	}
@@ -149,6 +151,11 @@ focus_tree = {
 			
 						add_political_power = 120
 					
+			
+			swap_ideas = {
+			 remove_idea = neutrality_idea 
+			add_idea = SWI_ueberdenken_aussenpolitk
+			}
 			
 		}
 	}
