@@ -613,8 +613,6 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = italy.19.a
-		#44 = { add_core_of = GER }
-		#ITA = { transfer_state = 44 }
 		ITA = { transfer_state = 543 }
 		ITA = { transfer_state = 708 }
 		ITA = { transfer_state = 706 }
@@ -631,7 +629,8 @@ country_event = {
 	option = {
 		name = italy.20.a
 		44 = { add_core_of = ITA }
-		ITA = { transfer_state = 44 }
+		805 = { add_core_of = ITA }
+		ITA = { annex_country = ALB }
 		add_named_threat = { threat = 2.5 name = "albanischer Anschluss" }
 	}
 }
