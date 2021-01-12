@@ -13145,3 +13145,16 @@ news_event = {
 		name = news.337.a
 	}
 }
+
+#Schweiz ueberdenkt allies
+news_event = {
+	id = news.338
+	title = news.338.title
+	desc = news.338.desc
+	picture = GFX_news_event_024
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = news.338.a
+	}
+}

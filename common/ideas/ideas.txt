@@ -54,15 +54,31 @@ ideas = {
 				war_support_weekly = 0.01
 			}
 		}
-		SOV_facistic_movement = {
-			allowed = { always = yes }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			modifier = {
-				fascism_drift = 0.1
-				neutrality_drift = 0.2
-			}
-		}
+		SOV_tsar_movement = {
+            allowed = { always = yes }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                fascism_drift = 0.1
+                neutrality_drift = 0.1
+            }
+        }
+        SOV_facist_movement = {
+            allowed = { always = yes }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                fascism_drift = 0.15
+            }
+        }
+        SOV_romanov_movement = {
+            allowed = { always = yes }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                neutrality_drift = 0.15
+            }
+        }
 		SOV_democratic_movement = {
 			allowed = { always = yes }
 			allowed_civil_war = { always = yes }
@@ -81,6 +97,7 @@ ideas = {
 			}
 		}
 		SWI_einwanderer = {
+			allowed = { always = yes }
 			picture = prc_low_popular_support3
 			modifier = {
 				conscription = 0.02
@@ -92,6 +109,15 @@ ideas = {
 			modifier = {
 				justify_war_goal_time = -0.5
 				join_faction_tension = -0.5
+			}
+		}
+		SWI_kommunismus_kommt = {
+			allowed = { always = yes }
+			modifier = {
+				communism_drift = 0.15
+				democratic_drift = -0.1
+				facism_drift = -0.1
+				stability_weekly = -0.025
 			}
 		}
 	}

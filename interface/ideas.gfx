@@ -4533,15 +4533,24 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_sour_loser.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_SOV_facistic_movement"
-		texturefile = "gfx/interface/ideas/idea_sour_loser.dds"
-	}
-	spriteType = {
 		name = "GFX_idea_SOV_democratic_movement"
 		texturefile = "gfx/interface/ideas/idea_generic_communist_army.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_SOV_social_democratic_research"
-		texturefile = "gfx/interface/ideas/idea_jap_supremacy_of_technology.dds"
-	}
+        name = "GFX_idea_SOV_facist_movement"
+        texturefile = "gfx/interface/ideas/idea_idea_porsche.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_SOV_aristocratic_movement"
+        texturefile = "gfx/interface/ideas/idea_idea_can_patriation.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_SOV_romanov_movement"
+        texturefile = "gfx/interface/ideas/idea_idea_hol_depillarization.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_SOV_social_democratic_research"
+        texturefile = "gfx/interface/ideas/idea_jap_supremacy_of_technology.dds"
+    }
+
 }

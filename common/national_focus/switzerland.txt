@@ -19,14 +19,22 @@ focus_tree = {
 			FOCUS_FILTER_RESEARCH
 		}
 		completion_reward = {
-			
-						army_experience = 10
-						add_tech_bonus = {
-							name = land_doc_bonus
-							bonus = 1.0
-							uses = 1
-							category = land_doctrine
-						}		
+			
+
+						army_experience = 10
+
+						add_tech_bonus = {
+
+							name = land_doc_bonus
+
+							bonus = 1.0
+
+							uses = 1
+
+							category = land_doctrine
+
+						}		
+
 			
 		}
 	}
@@ -43,10 +51,14 @@ focus_tree = {
 		}
 		prerequisite = { focus = SWI_aktivdienstgeneration  }
 		completion_reward = {
-			add_manpower = 50000
-			add_ideas = SWI_einwanderer
-			
-			
+			add_manpower = 50000
+
+			add_ideas = SWI_einwanderer
+
+			
+
+			
+
 			
 		}
 	}
@@ -77,10 +89,14 @@ focus_tree = {
 		}
 		prerequisite = { focus = SWI_einladung_zu_deutschen_versammlungen  }
 		completion_reward = {
-			add_popularity = { 
-			ideology = fascism 
-			popularity = 0.1
-			}
+			add_popularity = { 
+
+			ideology = fascism 
+
+			popularity = 0.1
+
+			}
+
 			
 		}
 	}
@@ -148,14 +164,21 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
-						add_political_power = 120
-					
-			
-			swap_ideas = {
-			 remove_idea = neutrality_idea 
+			
+
+						add_political_power = 120
+
+			news_event = {
+							
+			 id = news.338
+			}
+			swap_ideas = {
+
+			 remove_idea = neutrality_idea 
+
 			add_idea = SWI_ueberdenken_aussenpolitk
-			}
+			}
+
 			
 		}
 	}
@@ -171,6 +194,11 @@ focus_tree = {
 			FOCUS_FILTER_RESEARCH
 		}
 		prerequisite = { focus = SWI_fluechtlinge_aufnehmen  }
+		
+		completion_reward = {
+				add_research_slot = 1
+			
+		}
 	}
 
 	#Neue Technologien für die Armee
@@ -184,6 +212,10 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		prerequisite = { focus = SWI_fluechtlinge_aufnehmen  }
+
+		completion_reward = {
+
+		}
 	}
 
 	#Schweizer Autobahnen
@@ -210,6 +242,9 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		prerequisite = { focus = SWI_arbeiterzuwachs  }
+		completion_reward = {
+			
+		}
 	}
 
 	#Einladung zu deutschen Versammlungen
@@ -226,22 +261,35 @@ focus_tree = {
 		mutually_exclusive = { focus = SWI_schweizerkoenig  focus = SWI_bolschewisierung  focus = SWI_die_schweizer_eidgenosenschaft  }
 		ai_will_do = { factor = 1 }
 		available = {
-			
-						OR = {
-							has_government = democratic
-							has_government = neutrality
-						}
+			
+
+						OR = {
+
+							has_government = democratic
+
+							has_government = neutrality
+
+						}
+
 					
 		}
 		completion_reward = {
-			
-					
-					
-			add_political_power = 50
-			set_political_party = { 
-			ideology = facism
-			popularity = 0.15 
-			}
+			
+
+					
+
+					
+
+			add_political_power = 50
+
+			set_political_party = { 
+
+			ideology = facism
+
+			popularity = 0.15 
+
+			}
+
 			
 		}
 	}
@@ -258,6 +306,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = SWI_ein_neuer_beginn  }
 		mutually_exclusive = { focus = SWI_einladung_zu_deutschen_versammlungen  focus = SWI_schweizerkoenig  focus = SWI_die_schweizer_eidgenosenschaft  }
+		completion_reward = {
+			add_ideas = SWI_kommunismus_kommt
+		}
 	}
 
 	#Die Schweizer Eidgenosenschaft
@@ -309,10 +360,16 @@ focus_tree = {
 		}
 		prerequisite = { focus = SWI_bolschewisierung  }
 		completion_reward = {
-			add_popularity = { 
-			ideology = communism 
-			popularity = 0.1 
-			}
+			add_popularity = { 
+
+			ideology = communism 
+
+			popularity = 0.1
+
+			}
+
+
+
 			
 		}
 	}
