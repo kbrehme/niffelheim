@@ -3067,7 +3067,7 @@
 			add_popularity = { ideology = neutrality popularity = 0.10 }
 			add_stability = -0.10
 			add_timed_idea = {
-					idea = SOV_facistic_movement
+					idea = SOV_aristocratic_movement
 					days = 720
 			}
 		}
@@ -3086,7 +3086,45 @@
 		cost = 10
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			swap_ideas = { 
+				remove_idea = SOV_aristocratic_movement 
+				add_idea = SOV_facist_movement
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_drastic_change
+		#icon = 
+		prerequisite = { focus = SOV_tsar_leader }
+		x = 0
+		y = 1
+		relative_position_id = SOV_tsar_leader
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+			fascism > 0.2
+		}
+		completion_reward = {
+			release = UKR
+			release = BLR
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			if = {
+				limit = { fascism > 0.4 }
+				start_civil_war = {
+					ideology = communism
+					size = 0.25
+				}
+			}
+			else = {
+				start_civil_war = {
+					ideology = communism
+					size = 0.35
+				}
+			}
 		}
 	}
 	
@@ -3097,13 +3135,16 @@
 		#icon = 
 		mutually_exclusive = { focus = SOV_tsar_leader }
 		prerequisite = { focus = SOV_change_to_tsar }
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = SOV_change_to_tsar
 		cost = 10
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			swap_ideas = { 
+				remove_idea = SOV_aristocratic_movement 
+				add_idea = SOV_romanov_movement
+			}
 		}
 	}
 
