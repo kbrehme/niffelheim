@@ -2993,11 +2993,32 @@
 			add_to_faction = PER
 		}
 	}
+
+	focus = {
+		id = SOV_bridge_for_socialism
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = SOV_persian_pact }
+		x = 0
+		y = 1
+		relative_position_id = SOV_persian_pact
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+			TUR = {
+				add_popularity = { ideology = democratic popularity = 0.10 }
+				add_timed_idea = {
+						idea = SOV_democratic_movement
+						days = 360
+				}
+			}
+		}
+	}
+
 	
 	focus = {
 		id = SOV_help_for_allies
 		icon = GFX_goal_molotov_ribbentrop_pact
-		prerequisite = { focus = SOV_persian_pact }
+		prerequisite = { focus = SOV_bridge_for_socialism }
 		prerequisite = { focus = SOV_balcan_treaty }
 		x = 1
 		y = 1
@@ -3067,7 +3088,7 @@
 			add_popularity = { ideology = neutrality popularity = 0.10 }
 			add_stability = -0.10
 			add_timed_idea = {
-					idea = SOV_aristocratic_movement
+					idea = SOV_tsar_movement
 					days = 720
 			}
 		}
@@ -3077,7 +3098,7 @@
 	
 	focus = {
 		id = SOV_tsar_leader
-		#icon = 
+		icon = GFX_focus_ger_revive_kaiserreich
 		mutually_exclusive = { focus = SOV_lost_tsar_lady }
 		prerequisite = { focus = SOV_change_to_tsar }
 		x = -2
@@ -3087,7 +3108,7 @@
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = { 
-				remove_idea = SOV_aristocratic_movement 
+				remove_idea = SOV_tsar_movement 
 				add_idea = SOV_facist_movement
 			}
 		}
@@ -3095,7 +3116,7 @@
 	
 	focus = {
 		id = SOV_drastic_change
-		#icon = 
+		icon = GFX_focus_GRE_reviving_the_double_headed_eagle
 		prerequisite = { focus = SOV_tsar_leader }
 		x = 0
 		y = 1
@@ -3127,12 +3148,26 @@
 			}
 		}
 	}
+
+	focus = {
+		id = SOV_three
+		#icon = 
+		prerequisite = { focus =  SOV_drastic_change }
+		x = 0
+		y = 1
+		relative_position_id = SOV_drastic_change 
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+
+		}
+	}
 	
 	#TSAR_FOCUS
 	
 	focus = {
 		id = SOV_lost_tsar_lady
-		#icon = 
+		icon = GFX_focus_mex_soldaderas
 		mutually_exclusive = { focus = SOV_tsar_leader }
 		prerequisite = { focus = SOV_change_to_tsar }
 		x = 2
@@ -3142,9 +3177,51 @@
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = { 
-				remove_idea = SOV_aristocratic_movement 
+				remove_idea = SOV_tsar_movement 
 				add_idea = SOV_romanov_movement
 			}
+		}
+	}
+
+	focus = {
+		id = SOV_one
+		#icon = 
+		prerequisite = { focus = SOV_lost_tsar_lady }
+		x = 0
+		y = 1
+		relative_position_id = SOV_lost_tsar_lady
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = SOV_two
+		#icon = 
+		prerequisite = { focus = SOV_one focus = SOV_drastic_change }
+		x = -2
+		y = 1
+		relative_position_id = SOV_one
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = SOV_four
+		#icon = 
+		prerequisite = { focus =  SOV_one }
+		x = 0
+		y = 1
+		relative_position_id = SOV_one
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+
 		}
 	}
 
