@@ -8,6 +8,11 @@ bookmarks = {
 		default = yes
 		
 
+		ROM = {
+			minor = yes
+			history = "SWE_GATHERING_STORM_DESC"
+			ideology = democratic
+		}
 		"SWE"={
 			history = "SWE_GATHERING_STORM_DESC"
 			ideology = democratic

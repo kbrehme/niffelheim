@@ -371,9 +371,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-  name = "Blyert Hattori"
+  name = "Marufin Takeda"
   desc = "POLITICS_Hirohito_DESC"
-  picture = "portrait_jap_blyert.dds"
+  picture = "portrait_jap_marufin.dds"
   expire = "1989.1.1"
   ideology = fascism_ideology
   traits = {
