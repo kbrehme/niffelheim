@@ -1,0 +1,45 @@
+focus_tree = {
+	id = argentina
+	continuous_focus_position = { x = 0 y = 1000 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ARG
+		}
+	}
+
+	#First
+	focus = {
+		id = Arg_Begin
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 0
+		cost = 10
+		search_filters = {}
+		completion_reward = {
+            add_political_power = 150
+			army_experience = 10
+            add_tech_bonus = {
+                name = land_doc_bonus
+                bonus = 1.0
+                uses = 1
+                category = land_doctrine
+            }		
+		}
+	}
+
+	#Second
+	focus = {
+		id = ARG_New_Diplomatic
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		prerequisite = { focus = Arg_Begin }
+		completion_reward = {
+			add_manpower = 50000
+		}
+	}
+}
