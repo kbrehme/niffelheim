@@ -6,7 +6,11 @@ bookmarks = {
 		picture = "GFX_select_date_1939"
 		default_country = "GER"
 	
-		
+		ARG = {
+			minor = yes
+			history = SWE_BLITZKRIEG_DESC
+			ideology = neutrality
+		}
 		ROM = {
 			minor = yes
 			history = SWE_BLITZKRIEG_DESC

@@ -7,7 +7,11 @@ bookmarks = {
 		default_country = "GER"
 		default = yes
 		
-
+		ARG = {
+			minor = yes
+			history = SWE_BLITZKRIEG_DESC
+			ideology = neutrality
+		}
 		ROM = {
 			minor = yes
 			history = "SWE_GATHERING_STORM_DESC"

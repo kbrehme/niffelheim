@@ -17,7 +17,6 @@ focus_tree = {
 		y = 0
 		cost = 10
 		completion_reward = {
-            add_political_power = 150
 			army_experience = 15
 			navy_experience = 15
 		}
@@ -25,14 +24,12 @@ focus_tree = {
 
 	focus = {
 		id = ARG_politic_begin
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_generic_demand_territory
 		x = 14
 		y = 0
 		cost = 10
 		completion_reward = {
             add_political_power = 150
-			army_experience = 15
-			navy_experience = 15
 		}
 	}
 
@@ -42,7 +39,7 @@ focus_tree = {
 		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = ARG_politic_begin }
 		relative_position_id = ARG_politic_begin
-		x = -3
+		x = -2
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -61,11 +58,45 @@ focus_tree = {
 		}
 	}
 
+	#ARG EMPIRE
 	focus = {
-		id = ARG_new_inca_empire
+		id = ARG_better_empire
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = ARG_remove_guarantee }
+		mutually_exclusive = { focus = ARG_the_true_sun }
+		relative_position_id = ARG_remove_guarantee
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+
+
+
+	#INCA EMPIRE
+	focus = {
+		id = ARG_the_true_sun
 		icon = GFX_focus_TUR_the_sun_language_theory
 		prerequisite = { focus = ARG_remove_guarantee }
+		mutually_exclusive = { focus = ARG_better_empire }
 		relative_position_id = ARG_remove_guarantee
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_popularity ={ ideology = fascism popularity = 0.25 } 
+		}
+
+	}
+
+	focus = {
+		id = ARG_new_inca_empire
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = ARG_the_true_sun }
+		relative_position_id = ARG_the_true_sun
 		x = 0
 		y = 1
 		cost = 10
