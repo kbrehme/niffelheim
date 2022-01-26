@@ -132,8 +132,7 @@ set_convoys = 120
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1931.11.8"
-	election_frequency = 72
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 5
@@ -143,7 +142,7 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Flo Sol"
+	name = "Florián a Gusto"
 	desc = "POLITICS_AGUSTIN_PEDRO_JUSTO_DESC"
 	picture = "portrait_ARG_neu.dds"
 	expire = "1965.1.1"
@@ -157,8 +156,7 @@ create_country_leader = {
 	set_politics = {
 		ruling_party = neutrality
 		last_election = "1937.9.5"
-		election_frequency = 108
-		elections_allowed = yes
+		elections_allowed = no
 	}
 
 	set_popularities = {
@@ -169,9 +167,9 @@ create_country_leader = {
 	}
 
 	create_country_leader = {
-		name = "Roberto María Ortiz"
+		name = "Florián a Gusto"
 		desc = "POLITICS_ROBERTO_MARIA_ORTIZ_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
+		picture = "portrait_ARG_neu.dds"
 		expire = "1965.1.1"
 		ideology = despotism
 		traits = {
@@ -193,7 +191,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Flori Heiny"
+	name = "Флориан красный"
 	desc = "POLITICS_MARCELO_ALVEAR_DESC"
 	picture = "portrait_ARG_kom.dds"
 	expire = "1965.1.1"
@@ -204,7 +202,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Florjian Hen"
+	name = "Florjian Arboleda"
 	desc = "POLITICS_FANNY_JABCOVSKY_DESC"
 	picture = "portrait_ARG_demo.dds"
 	expire = "1965.1.1"

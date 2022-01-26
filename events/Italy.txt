@@ -747,3 +747,17 @@ country_event = {
 		add_named_threat = { threat = 5 name = "neues römisches Reich" }
 	}
 }
+
+# international bubatz agreement
+country_event = {
+  id = italy.26
+  title = italy.26.t
+  desc = italy.26.d
+  is_triggered_only = yes
+  option = {
+    name = ita.26.a
+  }
+  option = {
+    name = ita.26.b
+  }
+}
