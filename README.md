@@ -6,40 +6,39 @@
 ## MOD-Overview
 ___
 
-- custom events for ITA
-- custom focus for SWE,ITA
-- custom leader/general pictures for GB, SWE, ITA, GER, JAP, ARG, KAN, USA
+- Eigene Events ITA
+- Eigener Fokus ITA, SWE, ARG, SWI, GER, 
+- neue Anführer für GB, SWE, ITA, GER, JAP, ARG, KAN, USA
 
 ### **Changelog**
 ___
 
+- **v-1.3**
+    + Änderung Mod - Version von 1.10.3 zu 1.11.4
+    + Neu erstellt ARG - Fokus Baum
+    - Änderung GB / "Frank aus MGD" entfernt + Custom Focus 
+    - Änderung ROM / "Schmeißer" entfernt
+    - Änderung USA / "FH" entfernt
+
 - **v-1.2**
 
-    - complete new focus tree for SWE without functions
-    - new focus tree for ITA, with several functions
-    - new custom events for ITA focus tree
-  
+    + Neuer Fokus Baum SWE ( Fertig )
+    + Neuer Fokus Baum ITA mit Events ( Fertig )
 
 - **v-1.1**
 
-    - added custom loading screen and tips
-    - added custom focus tree in ITA
-    - added "Kaisolini" as leader for ITA
-    - added "Frank aus MGD" as leader for GB
-    - added "Gottmarck" as leader for GER-Kaiserreich
-    - added "Arashi" as leader for SWE
+    + Custom Loading Screen
+    + Neuer Fokus Baum ITA
+    + neuer Anführer "Kaisolini" - ITA
+    + neuer Anführer "Frank aus MGD" - GB
+    + neuer Anführer "Gottmarck"  GER
+    + neuer Anführer "Arashi" - SWE
 
 
 - **v-1.0**
 
-    - create mod, basic implementation of new leader pictures
+    + Erstellung Mod, neuer Anführer etc
 
 
-### **Future Updates**
-___
 
-- [ ] complete ITA focus tree with functions, events and world news
-- [ ] complete SWE focus tree with functions, events and world news
-- [ ] add several new focus functions in GB focus tree
-- [ ] create new factions for SWE,GER,GB and ITA
-- [ ] create new visuals for countrys if politics changes
+
