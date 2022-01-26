@@ -756,8 +756,10 @@ country_event = {
   is_triggered_only = yes
   option = {
     name = ita.26.a
+    # relation bonus
   }
   option = {
     name = ita.26.b
+    # relation decrease
   }
 }

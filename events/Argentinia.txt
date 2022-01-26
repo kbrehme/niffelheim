@@ -1,0 +1,21 @@
+###########################
+# Argentinian Events
+###########################
+
+add_namespace = argentinia
+
+# CHL joins ARG
+country_event = {
+  id = argentinia.1
+  title = argentinia.1.t
+  desc = argentinia.1.d
+  is_triggered_only = yes
+  option = {
+    name = argentinia.1.a
+    # annex
+  }
+  option = {
+    name = argentinia.1.b
+    # war goals
+  }
+}
