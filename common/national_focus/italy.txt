@@ -2932,4 +2932,135 @@ focus_tree = {
 			set_rule = { can_create_factions = yes }
 		}
 	}
+
+  # Rom Focus Baum 
+
+  focus = {
+		id = ITA_another_timeline_for_rome
+		icon = GFX_goal_generic_demand_territory
+		mutually_exclusive = { focus = ITA_victoryinETH focus=ITA_kaisolini }
+		x = 36
+		y = 0
+		cost = 10     
+		completion_reward = {
+      # suppot neutrality 
+		}
+  }
+
+  focus = {
+		id = ITA_move_him_to_the_alps
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = ITA_another_timeline_for_rome }
+		x = 36
+		y = 1
+		cost = 10
+		completion_reward = {
+			# Musolini wird abgesetzt 7 Übergangsregierung
+      # event ploppt auf  + Weltnews
+		}
+	}
+
+
+  focus = {
+		id = ITA_a_new_king 
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = ITA_move_him_to_the_alps }
+		x = 36
+		y = 2
+		cost = 10
+		completion_reward = {
+			# neuer König / alter stirbt
+    }
+	}
+
+  focus = {
+		id = ITA_a_young_king_needs_a_queen 
+		icon = GFX_goal_generic_construct_infrastructure
+    mutually_exclusive = { focus = ITA_disturb_the_germans }
+		prerequisite = { focus = ITA_a_new_king }
+		x = 35
+		y = 3
+		cost = 10
+		completion_reward = {
+			# Event Entscheidung schweiz oder spanische Prinzessin ( dadurch Bündnis oder Annektion von den Gebieten für WestRom)
+      # nationalen Spirit hinzufügen ( mit Zeitbeschränkung)
+    }
+	}
+
+  focus = {
+		id = ITA_every_street_leads_to_rome 
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = ITA_a_new_king }
+		x = 35
+		y = 4
+		cost = 10
+		completion_reward = {
+			# Infrastrukturverbesserung etc.
+    }
+	}
+
+  focus = {
+    id = ITA_romes_legions_are_not_dead
+		icon = GFX_goal_generic_construct_infrastructure
+    mutually_exclusive = { focus = ITA_venice_is_our_gate_to_the_world }
+		prerequisite = { focus = ITA_every_street_leads_to_rome }
+		x = 35
+		y = 5
+		cost = 10
+		completion_reward = {
+			# rekrutierbare Bev. 
+      # Ausbildungszeit verringern
+    }
+	}
+
+  focus = {
+		id = ITA_where_was_westrome_when_eastrome_has_fallen 
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = ITA_romes_legions_are_not_dead }
+		x = 35
+		y = 6
+		cost = 10
+		completion_reward = {
+			# GRE verbünden
+    }
+	}
+
+  focus = {
+		id = ITA_venice_is_our_gate_to_the_world
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = ITA_every_street_leads_to_rome }
+		x = 33
+		y = 5
+		cost = 10
+		completion_reward = {
+			# Hafen ausbauen Venedig
+      # nationalen Spirit hinzufügen
+    }
+	}
+
+  focus = {
+		id = ITA_the_emperors_plan
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = ITA_venice_is_our_gate_to_the_world }
+		x = 33
+		y = 6
+		cost = 10
+		completion_reward = {
+			# Besitzansprüche gegen Jugoslawien / Krieg gegen Jugoslawien
+    }
+	}
+
+  focus = {
+		id = ITA_disturb_the_germans 
+		icon = GFX_goal_generic_construct_infrastructure
+    mutually_exclusive = { focus = ITA_a_young_king_needs_a_queen }
+		prerequisite = { focus = ITA_a_new_king }
+		x = 37
+		y = 3
+		cost = 10
+		completion_reward = {
+			# Österreich "Anschluss"
+    }
+	}
+
 }
