@@ -2504,3 +2504,11 @@
  GER_knights_of_north_desc:0 "Die nordischen Länder geben ein hervoragendes arisches Volk ab. Zusammen mit den alten Benelux könnte sich damit etwas ergeben."
  GER_integrate_the_north:0 "Integration der arischen Völker"
  GER_integrate_the_north_desc:0 "Es wird Zeit ein großes Arisches Volk zu gründen."
+ 
+ # Argentinium
+ ARG_army_begin:0 "Militärischer Drill"
+ ARG_army_begin_desc:0 "Die argentinische Bevölkerung sehnt sich nach militärischem Aufschwung."
+ ARG_politic_begin:0 "Der Drang nach Wandel"
+ ARG_politic_begin_desc:0 "Das Volke Argentiniens zeigt reges Interesse an der Politik, das Interesse ließe sich zu unserem Gunsten manipulieren"
+ ARG_remove_gurantee:0 "Einflüsse der USA fernhalten"
+ ARG_remove_gurantee_desc:0 "Die USA haben lang genug in Südamerika dominiert, sie sollten sich endlich auf ihr Land beschränken."
