@@ -82,7 +82,21 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = {
-			#CHL = { country_event = {id = argentinia.1}}
+			# CHL = { country_event = {id = argentinia.1}}
+		}
+	}
+
+	focus = {
+		id = ARG_annex_uruguay
+		#icon = to be added
+		prequisite = { focus = ARG_ultimatum_for_chile }
+		relative_position_id = ARG_ultimatum_for_chile
+		x = 0
+		y = -1
+		cost = 8
+		completion_reward = {
+			# annex uruguay
+			# random malus or bonus on warsupport and/or manpower
 		}
 	}
 
@@ -97,9 +111,9 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = {
-			add_popularity ={ ideology = fascism popularity = -0.02 }
-			add_popularity ={ ideology = democratic popularity = -0.02 }
-			add_popularity ={ ideology = communism popularity = -0.05 }
+			add_popularity = { ideology = fascism popularity = -0.02 }
+			add_popularity = { ideology = democratic popularity = -0.02 }
+			add_popularity = { ideology = communism popularity = -0.05 }
 		}
 	}
 

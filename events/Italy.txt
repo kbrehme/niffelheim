@@ -755,11 +755,11 @@ country_event = {
   desc = italy.26.d
   is_triggered_only = yes
   option = {
-    name = ita.26.a
+    name = italy.26.a
     # relation bonus
   }
   option = {
-    name = ita.26.b
+    name = italy.26.b
     # relation decrease
   }
 }
