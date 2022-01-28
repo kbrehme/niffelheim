@@ -1,5 +1,6 @@
 # Niffelheims letztes Abendmahl - Mod for Steam Workshop
 
+[![.github/workflows/steam-deployment.yml](https://github.com/kbrehme/niffelheim/actions/workflows/steam-deployment.yml/badge.svg?event=deployment_status)](https://github.com/kbrehme/niffelheim/actions/workflows/steam-deployment.yml)
  
  
  
