@@ -1,5 +1,9 @@
 # Niffelheims letztes Abendmahl - Mod for Steam Workshop
 
+https://img.shields.io/github/repo-size/kbrehme/niffelheim | https://img.shields.io/github/issues/kbrehme/niffelheim?label=Aufgaben | https://img.shields.io/github/commits-since/kbrehme/niffelheim/1.3 | 
+
+https://img.shields.io/github/checks-status/kbrehme/niffelheim/master?label=master-repo | https://img.shields.io/github/checks-status/kbrehme/niffelheim/beta-visuals?label=beta-visuals | 
+
 [![.github/workflows/steam-deployment.yml](https://github.com/kbrehme/niffelheim/actions/workflows/steam-deployment.yml/badge.svg?event=deployment_status)](https://github.com/kbrehme/niffelheim/actions/workflows/steam-deployment.yml)
  
  
